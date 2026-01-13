@@ -1,0 +1,970 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<!-- head 영역 -->
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="Author" content="">
+	<meta name="Keywords" content="">
+	<meta name="Description" content="">
+	<meta property="og:image" content="/favicon/og-image.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+	<title>boxads</title>
+    <link rel="stylesheet" href="../css/general.css?v=1910">
+	<link rel="stylesheet" href="../css/jquery-ui.css">
+	<script src="../js/jquery-1.12.4.min.js"></script>
+	<script src="../js/jquery-ui.js"></script>
+	<script src="../js/layout.js"></script>
+	
+	<!--슬라이더 관련 호출 -->
+	<link rel="stylesheet" href="../css/swiper.css">
+	<script src="../js/swiper.min.js"></script>
+	<!--//슬라이더 관련 호출 끝 -->
+	<!-- head 영역 끝 -->
+</head>
+<body>
+	<div id="wrap">
+	<!-- gnb 영역 -->
+		<div id="promo" class="active">
+			<div class="promo_inner">
+				<div class="promo_slider">
+					<div class="swiper-wrapper">
+						<div class="promo-content swiper-slide">
+							<p>회원가입 후 첫 구매 시 최대 10,000원 할인 <a href="#" class="go">구매하러가기</a></p>
+						</div>
+						<div class="promo-content swiper-slide">
+							<p>회원가입 후 첫 구매 시 최대 10,000원 할인 <a href="#" class="go">구매하러가기</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="promo-pager">
+				</div>
+				<button type="button" class="promo_close">Close</button>
+			</div>
+		</div>
+		<header id="header">
+			<div class="inner">
+				<div class="header_top">
+					<div class="top_left">
+						<h1 class="logo"><a href="#">Boxads</a></h1>
+						<div class="srch_wrap">
+							<form action="#" method="get">
+								<input type="text" name="keyword" id="header_srch" placeholder="검색어를 입력하세요.">
+								<label for="header_srch" class="blind">검색</label>
+								<button type="button" class="btn delete">삭제</button>
+								<button type="submit" class="btn">검색</button>
+							</form>
+						</div>
+						<button type="button" class="btn btn_menu" onclick="btn_menu_open();">메뉴열기</button>
+					</div>
+					<div class="top_right">
+						<ul class="util customer">
+							<li>
+								<a href="javascript:;">메시지</a>
+								<div class="over_wrap message">
+									<div class="inner">
+										<div class="over_tab">
+											<button type="button" class="btn on">메시지</button>
+											<button type="button" class="btn">알람</button>
+										</div>
+										<div class="tab_content" id="overTab0" style="display: block;">
+											<div class="scroll_wrap">
+												<div class="message_area">
+													<p class="m_date">18.09.24(월)</p>
+													 <div class="message clearfix">
+														<div class="img_area fl_l"><img src="../images/common/profile_img02.png" alt="프로필이미지"></div>
+														<div class="txt_area fl_l">
+															<a href="#" class="txt">메시지가 도착했습니다. 최대 한 줄 표기 최대 한 줄 표기 최대 한 줄 표기..</a>
+															<p class="name">(주)비트박스</p>
+														</div>
+													</div>
+												</div>
+												<div class="message_area">
+													<p class="m_date">18.09.23(일)</p>
+													<div class="message clearfix">
+														<div class="img_area fl_l"><img src="../images/common/profile_img02.png" alt="프로필이미지"></div>
+														<div class="txt_area fl_l">
+															<a href="#" class="txt">메시지가 도착했습니다. 최대 한 줄 표기 최대 한 줄 표기 최대 한 줄 표기..</a>
+															<p class="name">(주)비트박스</p>
+														</div>
+													</div>
+													<div class="message clearfix">
+														<div class="img_area fl_l"><img src="../images/common/profile_img02.png" alt="프로필이미지"></div>
+														<div class="txt_area fl_l">
+															<a href="#" class="txt">메시지가 도착했습니다. 최대 한 줄 표기 최대 한 줄 표기 최대 한 줄 표기..</a>
+															<p class="name">(주)비트박스</p>
+														</div>
+													</div>
+												</div>
+												<div class="message_area">
+													<p class="m_date">18.09.22(토)</p>
+													 <div class="message clearfix">
+														<div class="img_area fl_l"><img src="../images/common/profile_img02.png" alt="프로필이미지"></div>
+														<div class="txt_area fl_l">
+															<a href="#" class="txt">메시지가 도착했습니다. 최대 한 줄 표기 최대 한 줄 표기 최대 한 줄 표기..</a>
+															<p class="name">(주)비트박스</p>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="link_area"><a href="#">전체보기<i></i></a></div>
+										</div>
+										<div class="tab_content" id="overTab1">
+											<div class="scroll_wrap">
+												<div class="message_area">
+													<p class="m_date">18.09.24(월)</p>
+													<div class="notice">
+														<div class="txt_area">
+															<a href="#" class="txt">메시지가 도착했습니다. 최대 한 줄 표기 최대 한 줄 표기 최대 한 줄 표기 최대 한 줄 표기 최대 한 줄 표기 최대 한 줄 표기  최대 한 줄 표기 최대 한 줄 표기 최대 한 줄 표기</a>
+														</div>
+													</div>
+													<div class="notice">
+														<div class="txt_area">
+															<a href="#" class="txt">메시지가 도착했습니다. 최대 한 줄 표기 최대 한 줄 표기 최대 한 줄 표기 최대 한 줄 표기 최대 한 줄 표기 최대 한 줄 표기  최대 한 줄 표기 최대 한 줄 표기 최대 한 줄 표기</a>
+														</div>
+													</div>
+												</div>
+												<div class="message_area">
+													<p class="m_date">18.09.23(일)</p>
+													<div class="notice">
+														<div class="txt_area">
+															<a href="#" class="txt">메시지가 도착했습니다. 최대 한 줄 표기 최대 한 줄 표기 최대 한 줄 표기 최대 한 줄 표기 최대 한 줄 표기 최대 한 줄 표기  최대 한 줄 표기 최대 한 줄 표기 최대 한 줄 표기</a>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="link_area"><a href="#">전체보기<i></i></a></div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<a href="javascript:;">박스(BOX)</a>
+								<div class="over_wrap">
+									<div class="inner">
+										<ul>
+											<li><a href="#">마이 박스 판매</a></li>
+											<li><a href="#">박스 구매</a></li>
+											<li><a href="#">마이 박스 관리</a></li>
+											<li><a href="#">마이 박스 등록</a></li>
+										</ul>
+									</div>
+								</div>
+							</li>
+							<li>
+								<a href="javascript:;">애드(Ads)</a>
+								<div class="over_wrap">
+									<div class="inner">
+										<ul>
+											<li><a href="#">마이 애드 요청</a></li>
+											<li><a href="#">애드 신청</a></li>
+											<li><a href="#">마이 애드 관리</a></li>
+											<li><a href="#">마이 애드 등록</a></li>
+										</ul>
+									</div>
+								</div>
+							</li>
+							<li class="profile">
+								<a href="#" class="clearfix">
+									<div class="img_area fl_l"><img src="../images/common/profile_img01.png" alt="프로필이미지"></div>
+									<p class="fl_l"><strong>웹비즈</strong>님</p>
+								</a>
+								<div class="over_wrap profile">
+									<div class="inner">
+										<ul>
+											<li><a href="#">지갑관리</a></li>
+											<li><a href="#">찜리스트</a></li>
+											<li><a href="#">메시지</a></li>
+											<li><a href="#">계정관리</a></li>
+											<li><a href="#">로그아웃</a></li>
+										</ul>
+									</div>
+								</div>
+							</li>
+						</ul> <!-- 로그인 후 -->
+						<!-- <ul class="util standard">
+							<li><a href="#">판매시작하기</a></li>
+							<li><a href="#">광고시작하기</a></li>
+							<li><a href="#" class="on">로그인</a></li>
+							<li class="bg"><a href="#">무료 회원가입</a></li>
+						</ul> --> <!-- 로그인 전 -->
+					</div>
+				</div>
+				<nav class="header_gnb">
+					<ul>
+						<li class="selected"><a href="javascript:;">패션의류</a></li>
+						<li><a href="javascript:;">뷰티·잡화</a></li>
+						<li><a href="javascript:;">출산·육아</a></li>
+						<li><a href="javascript:;">디지털·가전</a></li>
+						<li><a href="javascript:;">식품</a></li>
+						<li><a href="javascript:;">생활·건강</a></li>
+						<li><a href="javascript:;">스포츠·취미·반려</a></li>
+						<li><a href="javascript:;">레저·자동차</a></li>
+						<li><a href="javascript:;">도서·문구·티켓</a></li>
+					</ul>
+				</nav>
+				<nav class="mobile_gnb">
+					<div class="swiper-container">
+						<ul class="swiper-wrapper">
+							<li class="swiper-slide selected"><a href="javascript:;">패션의류</a></li>
+							<li class="swiper-slide"><a href="javascript:;">뷰티·잡화</a></li>
+							<li class="swiper-slide"><a href="javascript:;">출산·육아</a></li>
+							<li class="swiper-slide"><a href="javascript:;">디지털·가전</a></li>
+							<li class="swiper-slide"><a href="javascript:;">식품</a></li>
+							<li class="swiper-slide"><a href="javascript:;">생활·건강</a></li>
+							<li class="swiper-slide"><a href="javascript:;">스포츠·취미·반려</a></li>
+							<li class="swiper-slide"><a href="javascript:;">레저·자동차</a></li>
+							<li class="swiper-slide"><a href="javascript:;">도서·문구·티켓</a></li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</header>
+		<aside id="aside_menu">
+			<div class="aside_bg"></div>
+			<button class="btn btn_close" type="button" onclick="btn_menu_close();">닫음</button>
+			<div class="aside_wrap">
+				<div class="aside_info_wrap">
+					<div class="aside_info">
+						<div class="img_area"><img src="../images/common/profile_img01.png" alt="프로필이미지"></div>
+						<p class="name"><span><strong>웹비즈웹비즈웹비즈웹비즈웹비즈웹비즈</strong>님.</span></p>
+					</div>
+					<a href="#" class="btn btn_notice on">알림</a>
+					<a href="#" class="btn btn_setting">설정</a>
+				</div>
+				<div class="aside_info_wrap login_n" style="display: none;">
+					<div class="aside_info">
+						<div class="img_area"><img src="../images/common/no-profile.png" alt="프로필이미지"></div>
+						<p class="name"><span>로그인이<br> 필요합니다</span></p>
+					</div>
+					<div class="btn_area">
+						<a href="#" class="btn login">로그인</a>
+						<a href="#" class="btn join">회원가입</a>
+					</div>
+				</div>
+				<div class="aside_srch">
+					<input type="text" name="aside_search" id="aside_search" placeholder="검색어를 입력하세요">
+					<label for="aside_search" class="blind">검색어 입력</label>
+					<button type="button" class="btn delete">삭제</button>
+					<button type="button" class="btn">검색</button>
+				</div>
+				<div class="aside_list">
+					<ul>
+						<li><a href="#"><span>홈</span></a></li>
+					</ul>
+				</div>
+				<div class="aside_list aside_list02">
+					<ul>
+						<li><a href="#"><span>메세지</span></a></li>
+						<li><a href="#"><span>찜리스트</span></a></li>
+						<li><a href="#"><span>지갑관리</span></a></li>
+						<li><a href="#"><span>거래관리</span></a></li>
+					</ul>
+				</div>
+				<div class="aside_list aside_list02">
+					<ul>
+						<li class="depth">
+							<a href="javascript:;"><span>박스(Box)</span></a>
+							<ul class="depth2">
+								<li><a href="#">마이 박스 판매</a></li>
+								<li><a href="#">박스 구매</a></li>
+								<li><a href="#">마이 박스 관리</a></li>
+								<li><a href="#">마이 박스 등록</a></li>
+							</ul>
+						</li>
+						<li class="depth">
+							<a href="javascript:;"><span>애드(Ads)</span></a>
+							<ul class="depth2">
+								<li><a href="#">마이 애드 거래</a></li>
+								<li><a href="#">애드 신청</a></li>
+								<li><a href="#">마이 애드 관리</a></li>
+								<li><a href="#">마이 애드 등록</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div class="aside_list aside_list02">
+					<ul>
+						<li class="depth">
+							<a href="javascript:;"><span>이용안내</span></a>
+							<ul class="depth2">
+								<li><a href="#">서비스 소개</a></li>
+								<li><a href="#">판매자 박스(Box) 이용법</a></li>
+								<li><a href="#">광고주 박스(Ads) 이용법</a></li>
+							</ul>
+						</li>
+						<li><a href="javascript:;" class="aside_inquire"><span>고객센터</span></a></li>
+						<li><a href="#"><span>로그아웃</span></a></li>
+					</ul>
+				</div>
+				<div class="aside_sub">
+					<i class="cs"></i>
+					<div class="as_inner">
+						<p>고객센터</p>
+						<span><strong><a href="#">1588-0000</a></strong> (09:00 ~ 18:30)</span>
+					</div>
+				</div>
+			</div>
+		</aside>
+	<!-- //gnb 영역 끝-->	
+		<div id="container">
+			<div class="sub_wrap mypage_wrap">
+				<div class="inner">
+					<div class="path">
+						<ul>
+							<li>홈</li>
+							<li>애드(Ads)</li>
+							<li>마이 애드 등록</li>
+						</ul>
+					</div>
+					<h2 class="title">마이 애드 등록</h2>
+					<h3 class="top_tit">광고 정보 입력 <strong class="required">*</strong>
+						<p class="txt"><strong class="required">*</strong> 표시는 필수 입력 정보 입니다.</p>
+					</h3>
+					<div class="input_area_wrap">
+						<dl>
+							<dt>광고 명
+								<span class="tooltip_icon">
+									<span class="tooltiptext">
+										홍보하려는 브랜드, 제품, 서비스명을 넣어 입력해주세요.
+									</span>
+								</span>
+							</dt>
+							<dd>
+								<div class="input_area">
+									<input type="text" name="box_name" id="box_name"  required placeholder="광고 명을 입력해주세요." title="광고 명">
+								</div>
+							</dd>
+						</dl>
+						<dl>
+							<dt>타겟 카테고리 선택
+								<span class="tooltip_icon">
+									<span class="tooltiptext">
+										쇼핑몰 구매 고객 중 희망하는 제품 카테고리를 최대 5개까지 선택가능합니다.
+									</span>
+								</span>
+							</dt>
+							<dd>
+								<select name="box_cate01" id="box_cate01"  title="대분류 선택">
+									<option value="">대분류 선택</option>
+								</select>
+								<span class="txt">*대분류 5개 선택, 최소 2개 이상</span>
+								<div class="input_tag">
+									<span>
+										<em>대분류</em><button type="button">삭제</button>
+									</span>
+									<span>
+										<em>대분류</em><button type="button">삭제</button>
+									</span>
+									<span>
+										<em>대분류</em><button type="button">삭제</button>
+									</span>
+									<span>
+										<em>대분류</em><button type="button">삭제</button>
+									</span>
+								</div>
+							</dd>
+						</dl>
+						<dl>
+							<dt>타겟 연령
+								<span class="tooltip_icon">
+									<span class="tooltiptext">
+										홍보 타겟 고객의 연령대를 선택해주세요. 중복선택 가능합니다.
+									</span>
+								</span>
+							</dt>
+							<dd>
+								<select name="box_cate01" id="box_cate01" title="홍보 타겟 고객의 연령대 선택">
+									<option value="">선택하세요</option>
+									<option value="">14세~24세</option>
+									<option value="">25세~34세</option>
+									<option value="">35세~44세</option>
+									<option value="">45세~54세</option>
+									<option value="">55세~64세</option>
+									<option value="">65세~</option>
+								</select>
+								<select name="box_cate02" id="box_cate02" title="홍보 타겟 고객의 연령대 선택">
+									<option value="">선택하세요</option>
+									<option value="">14세~24세</option>
+									<option value="">25세~34세</option>
+									<option value="">35세~44세</option>
+									<option value="">45세~54세</option>
+									<option value="">55세~64세</option>
+									<option value="">65세~</option>
+								</select>
+								<span class="txt">*중복선택</span>
+								<div class="input_tag">
+									<span>
+										<em>14세~24세</em><button type="button">삭제</button>
+									</span>
+									<span>
+										<em>25세~34세 </em><button type="button">삭제</button>
+									</span>
+									
+								</div>
+								
+							</dd>
+						</dl>
+						<dl>
+							<dt>타겟 성별
+								<span class="tooltip_icon">
+									<span class="tooltiptext">
+										홍보 타겟 고객의 성별을 선택해주세요.
+									</span>
+								</span>
+							</dt>
+							<dd>
+								<select name="gender" id="gender" title="홍보 타겟 고객 성별 선택">
+									<option value="">선택하세요</option>
+									<option value="">주로 여성 </option>
+									<option value="">주로 남성 </option>
+									<option value="">모든 성별 </option>
+								</select>
+								
+							</dd>
+						</dl>
+						<dl>
+							<dt>타겟 유형
+								<span class="tooltip_icon">
+									<span class="tooltiptext">
+										홍보 타겟을 개인과 기업 중 하나 선택해주세요.
+									</span>
+								</span>
+							</dt>
+							<dd>
+								<select name="type01" id="type01" title="타겟 유형 선택">
+									<option value="">선택하세요</option>
+									<option value="">개인고객</option>
+									<option value="">기업고객</option>
+								</select>
+							</dd>
+						</dl>
+						<dl>
+							<dt>광고 유형
+								<span class="tooltip_icon">
+									<span class="tooltiptext">
+										홍보물 유형을 선택해주세요. 희망하는 홍보물을 전국에 배포하여 신규 고객을 확보할 수 있습니다.
+									</span>
+								</span>
+							</dt>
+							<dd>
+								<select name="cnt" id="cnt">
+									<option value="">선택하세요</option>
+									<option value="">전단지 A4</option>
+									<option value="">전단지 B5</option>
+									<option value="">전단지 쿠폰</option>
+									<option value="">스티커 중</option>
+									<option value="">스티커 소</option>
+									<option value="">샘플 중</option>
+									<option value="">샘플 소</option>
+								</select>
+								<a href="javascript:modal_open('guide01');" class="btn_guide"><span>광고유형 가이드</span></a>
+							</dd>
+						</dl>
+						<dl>
+							<dt>홍보 웹페이지 주소
+								<span class="tooltip_icon">
+									<span class="tooltiptext">
+										홍보웹페이지 주소는 QR 코드로 변환하여 홍보물에 인쇄 후 타겟 고객에게 노출됩니다. 정확한 주소를 입력해주세요. (단, 샘플 광고는 광고주가 샘플을 직접 제작 후 배송하기에 QR코드 사용이 필수가 아닙니다
+									</span>
+								</span>
+							</dt>
+							<dd class="qr_wrap">
+								<div class="qr_area">
+									<div class="input_area">
+										<input type="text" name="site_url" id="site_url"  required placeholder="https://, http://를 포함하여 입력해주세요." title="홍보 웹페이지 주소">
+									</div>
+									<span class="txt">*등록 인터넷주소는 QR 코드로 만들어진 후, 전단지, 스티커에 같이 인쇄되어 소비자에게 배포합니다. (샘플 광고 제외)</span>
+									<button type="button" class="btn_qrcode" style="background-image:url(../images/sub/qr_icon.png);">QR 보기</button>
+									<div class="popup_qrcode">
+										<div class="head_title">
+											QR 코드
+											<a href="javascript:;" class="btn_close">닫기</a>
+										</div>
+										<div class="qrcode_box">
+											<img src="../images/sub/qr_code.png" alt="">
+										</div>
+										
+									</div>
+								</div>
+							</dd>
+						</dl>
+						<dl>
+							<dt>광고 기간
+								<span class="tooltip_icon">
+									<span class="tooltiptext">
+										회사에서 계획한 홍보 시작일과 종료일을 선택해주세요. 박스애드 마켓에 애드 상품을 노출하는 기간과 다른 설정이니 주의하세요.
+									</span>
+								</span>
+							</dt>
+							<dd>
+								<div class="input_area input_date">
+									<input type="text" title="광고 시작일"  placeholder="시작일" id="datepicker1">
+								</div>
+								<span class="hypen">~</span>
+								<div class="input_area input_date">
+									<input type="text" title="광고 종료일" placeholder="종료일" id="datepicker2">
+								</div>
+							</dd>
+						</dl>
+						<dl>
+							<dt>광고 소개
+								<span class="tooltip_icon">
+									<span class="tooltiptext">
+										홍보 브랜드, 제품, 서비스의 간단한 소개를 100자 이내로 입력해주세요.
+									</span>
+								</span>
+							</dt>
+							<dd>
+								<div class="input_area" style="width:100%;">
+									<input type="text" name="box_name" id="box_name"  required placeholder="간단한 광고 브랜드, 제품, 서비스소개를 100자 이내로 입력해주세요." >
+								</div>
+							</dd>
+						</dl>
+						
+
+					</div>
+					<div class="bordered_m">
+						<h3 class="top_tit">광고 이미지 <strong class="required">*</strong>  (2개까지 입력) 
+						</h3>
+						<div class="input_area_wrap">
+							<div class="img_input_wrap">
+								<div class="input_area">
+									<input type="file" name="join_co08" id="join_co08" required>
+									<label for="join_co08" class="file_txt">
+										<span class="input_imgbox">
+											<strong>홍보물 </strong>
+											<span>이미지 업로드 <em>(필수)</em></span>
+										</span>
+									</label>
+								</div>
+								<div class="disp_wrap">
+									<ul>
+										<li>
+											<div class="imgbox dsp" style="background-image:url(../images/main/main_list02.jpg)">
+												
+												<button type="button">삭제</button>
+											</div>
+											<div class="selbox">
+												<span class="rdo"><input type="radio" name="sel_img" id="img01"><label for="img01">앞면 <span>이미지</span></label></span>
+											</div>
+										</li>
+										<li>
+											<div class="imgbox">
+												<input type="file" name="img_input02" id="img_input02" required>
+												<label for="img_input02" class="file_img" >
+													이미지 업로드
+												</label>
+												<button type="button" style="display:none">삭제</button>
+											</div>
+											<div class="selbox">
+												<span class="rdo"><input type="radio" name="sel_img" id="img02"><label for="img02">앞면 <span>이미지</span></label></span>
+											</div>
+										</li>
+										
+									</ul>
+									
+								</div>
+								<div class="txt_wrap">
+									<p >
+										광고 유형이 전단지, 스티커인 애드(Ads)는 등록한 광고 이미지로 인쇄 제작 후 홍보물을 판매자가 
+										택배상자에 동봉하여 소비자에게 배포합니다. “이미지 가이드”를 참고하여 유형별 인쇄에 적합한 
+										이미지를 등록해주세요. 등록 이미지가 1장이면 단면, 2장이면 양면으로 자동 인쇄 발주가 진행됩니다. 
+									</p>
+									<p class="g_txt">샘플인 경우 샘플 사진을 등록해주세요.</p>
+									<a href="javascript:modal_open('guide01');" class="linkbox">이미지 가이드 보기</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="pr_detail_wrap">
+						<h3 class="top_tit">광고 상세소개</h3>
+						<div class="editor_area">
+						</div>
+					</div>
+					
+                     <h3 class="top_tit">판매 설정</h3>
+					<div class="input_area_wrap setting"  style="margin-top: 10px;">
+						<dl>
+							<dt>광고여부
+							</dt>
+							<dd>
+								<span class="rdo"><input type="radio" name="sell_check" id="sell_check01"><label for="sell_check01">광고 대기</label></span>
+								<span class="rdo"><input type="radio" name="sell_check" id="sell_check02"><label for="sell_check02">광고 중</label></span>
+								<span class="rdo"><input type="radio" name="sell_check" id="sell_check03"><label for="sell_check03">일시 중지</label></span>
+								<span class="rdo"><input type="radio" name="sell_check" id="sell_check04"><label for="sell_check04">광고 종료</label></span>
+								
+							</dd>
+						</dl>
+						<dl class="term">
+							<dt>
+								상품노출기간
+							</dt>
+							<dd>
+								<div class="input_area input_date">
+									<input type="text" title="상품노출기간" name="stdate" placeholder="시작일" id="datepicker3">
+								</div>
+								<span class="hypen">~</span>
+								<div class="input_area input_date">
+									<input type="text" title="광고 종료일"   name="enddate" placeholder="종료일" id="datepicker4"">
+								</div>
+							</dd>
+						</dl>
+						<dl class="reson">
+							<dt>
+							</dt>
+							<dd>
+								<div class="input_area">
+									<input type="text" name="box_name" id="box_name" required="" placeholder="200자 이내로 사유를 입력해주세요." title="박스 명"><button class="btn" type="button">입력</button>
+								</div>
+							</dd>
+						</dl>
+					</div>
+					<div class="ing_list_wrap end wide">
+						<ul>
+							<li>
+								<div class="desc_area">
+									<p class="tit">일시 중지</p>
+									<p>마케팅이 더 이상 진행할필요가 없습니다.</p>
+								</div>
+								<div class="act_tit">
+									<span class="stdate">19. 10. 23  10:35:00</span>
+								</div>
+							</li>
+							<li>
+								<div class="desc_area">
+									<p class="tit">광고 종료</p>
+									<p>개인적인 사정으로 광고를 중단합니다..</p>
+								</div>
+								<div class="act_tit">
+									<span class="stdate">19. 10. 23  10:35:00</span>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="btn_area">
+						<button type="submit" class="btn btn_finish">저장</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--footer -->
+		<footer id="footer">
+			<div class="floatingBtnWrap">
+				<div class="floatingBtn">
+					<a href="javascript:;" class="ftTop"><span>상단으로 이동</span></a>
+				</div>
+			</div>
+			<div class="m_list">
+				<a href="#" class="btn">회사소개</a>
+				<a href="#" class="btn">이용약관</a>
+				<a href="#" class="btn">개인정보처리방침</a>
+			</div>
+			<div class="inner">
+				<div class="foot_l">
+					<h2 class="logo"><a href="javascript:;">boxads</a></h2>
+					<div class="footer_info">
+						<span class="call"><i>전화번호</i>02-0000-0000</span>
+						<span class="mail"><i>이메일</i>help@boxads.io</span>
+						<span class="location"><i>주소</i>서울시 서초구 강남대로369, 12층</span>
+					</div>
+					<div class="address">
+						<span>(주)스튜디오엑스코</span><span>대표: 김정석</span><span>개인보호책임: 최종인</span> <br />
+						<span>사업자등록번호 116-81-77652</span><span>통신판매업신고: 2014-서울 강남-01471호</span>
+						<span class="db">&copy; BOXAD</span>
+					</div>
+					<div class="footer_sub_info">
+						<h3>고객센터</h3>
+						<p><strong>1588-0000</strong> 평일 오전 10시 ~ 오후 6시(주말, 공휴일 제외)</p>
+						<div class="footer_sns">
+							<a href="#" class="sns01" target="_blank">페이스북 새창이동</a>
+							<a href="#" class="sns02" target="_blank">유투브 새창이동</a>
+							<a href="#" class="sns03" target="_blank">인스타그램 새창이동</a>
+							<a href="#" class="sns04" target="_blank">트위터 새창이동</a>
+						</div>
+					</div>
+				</div>
+				<div class="foot_r">
+					<dl>
+						<dt>ABOUT</dt>
+						<dd><a href="#">회사소개</a></dd>
+						<dd><a href="#">서비스소개</a></dd>
+					</dl>
+					<dl>
+						<dt>이용안내</dt>
+						<dd><a href="#">판매점 이용방법</a></dd>
+						<dd><a href="#">광고주 이용방법</a></dd>
+					</dl>
+					<dl>
+						<dt>고객센터</dt>
+						<dd><a href="#">공지사항</a></dd>
+						<dd><a href="#">FAQ</a></dd>
+						<dd><a href="#">1:1문의</a></dd>
+						<dd><a href="#">이용약관</a></dd>
+						<dd><a href="#">개인정보 취급방침</a></dd>
+					</dl>
+				</div>
+			</div>
+		</footer>
+		<!--// footer 끝 -->
+	</div>
+
+	<!-- 광고유형 가이드 -->
+	<div id="guide01" class="layerpop-box">
+		<div class="modal-bg"></div>
+		<div class="layerpopup">
+			<div class="inner">
+				<div class="msgbox prompt">
+					<div class="head_title" >광고유형 가이드<a href="javascript:;" class="btn_close">닫기</a></div>
+					<div class="body">
+						<div class="conts scroll">
+							<div class="guide_tab tab">
+								<ul>
+									<li class="active"><a href="javasscript:;">전단지</a></li>
+									<li><a href="javasscript:;">스티커</a></li>
+									<li><a href="javasscript:;">샘플</a></li>
+								</ul>
+							</div>
+							<div class="tab-content_wrap">
+								<div class="tab-content" style="display:block">
+									<p class="tab_title">전단지 광고 상품 소개</p>
+									<p>박스애드(BoxAds)의 전단지 광고는 택배 상자(봉투) 안, 빈공간에 넣어 제품과 같이 포장된 후 택배 기사가 고객의 집과 사무실 안 까지 안전하게 배송하여 소비자에게 배포되는 새로운 전단지 광고 기법입니다.</p>
+									<div class="img_area">
+										<img src="#" alt="">
+									</div>
+									<div class="desc_list">
+										<ul>
+											<li>
+												<p class="tit">고급지</p>
+												<p class="txt">전단지 재질은 고급지를 사용하여 보내는 광고주의 브랜드, 제품, 서비스 가치를 높이고, 받는 소비자의 품격을 만족시켜줍니다.</p>
+											</li>
+											<li>
+												<p class="tit">상자사이즈</p>
+												<p class="txt">택배상자(봉투) 크기에 맞는 전단지 종류를 선택하여 광고 할 수 있습니다.</p>
+											</li>
+											<li>
+												<p class="tit">단면/양면</p>
+												<p class="txt">전단지 이미지를 1장 등록하면 단면인쇄, 2장 등록하면 양면인쇄가 자동 됩니다.</p>
+											</li>
+											<li>
+												<p class="tit">QR 코드</p>
+												<p class="txt">전단지에는 광고주가 등록한 인터넷주소(URL)로 만든 QR code가 같이 인쇄되어, 광고 효과를 직접 확인할 수 있습니다.</p>
+											</li>
+										</ul>
+									</div>
+									<div class="table_desc">
+										<div class="left_desc">
+											<div class="inner_box">
+												<p><strong>1 BOX</strong>&nbsp; I &nbsp;최대 14장</p>
+												<p><strong>장당 광고 단가 </strong>&nbsp; I &nbsp;20원~150원</p>
+											</div>
+										</div>
+										<div class="table_wrap">
+											<table>
+												<caption>사이즈 테이블</caption>
+												<colgroup>
+													<col>
+													<col>
+													<col>
+													<col>
+												</colgroup>
+												<thead>
+													<tr>
+														<th>전단지 종류</th>
+														<th>택배상자 크기</th>
+														<th>광고이미지<br>(사이즈)</th>
+														<th>광고이미지<br>(해상도)</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<th>A4</th>
+														<td>X</td>
+														<td>X</td>
+														<td></td>
+													</tr>
+													<tr>
+														<th>B5</th>
+														<td>X</td>
+														<td>X</td>
+														<td></td>
+													</tr>
+													<tr>
+														<th>쿠폰</th>
+														<td>X</td>
+														<td>X</td>
+														<td></td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+										<p>(주의) 광고 이미지 등록 시 위 기준 이상의 파일을 제공해야 고품질 인쇄 제작이 가능합니다.</p>
+									</div>
+								</div>
+								<div class="tab-content">
+									<p class="tab_title">스티커 광고 상품 소개</p>
+									<p>박스애드(BoxAds)의 스티커 광고는 택배 상자(봉투) 밖, 옆 면에 부착된 후 택배 기사가 고객의 집과 사무실 안 까지 안전하게 배송하며, 배송 중 불특정 다수에게도 노출되는 효과도 있는 상품입니다.</p>
+									<div class="img_area">
+										<img src="#" alt="">
+									</div>
+									<div class="desc_list">
+										<ul>
+											<li>
+												<p class="tit">내구성</p>
+												<p class="txt">스티커는 물로 인한 번짐과 외부 긁힘에 내구성이 강한 재질의 전문 종이를 사용하여 배송중, 고객 도착, 재활용 처리되는 동안 광고 내용이 유지될 수 있도록 제작합니다.</p>
+											</li>
+											<li>
+												<p class="tit">상자사이즈</p>
+												<p class="txt">택배상자(봉투) 크기에 맞는 스티커 종류를 선택하여 광고 할 수 있습니다.</p>
+											</li>
+											<li>
+												<p class="tit">봉투형</p>
+												<p class="txt">스티커형 전단지는 최근 많이 사용되는 봉투형 포장재에도 부착이 용이하여 더 다양한 쇼핑몰 상품에도 광고를 할 수 있습니다</p>
+											</li>
+											<li>
+												<p class="tit">QR 코드</p>
+												<p class="txt">전단지에는 광고주가 등록한 인터넷주소(URL)로 만든 QR code가 같이 인쇄되어, 광고 효과를 직접 확인할 수 있습니다.</p>
+											</li>
+										</ul>
+									</div>
+									<div class="table_desc">
+										<div class="left_desc">
+											<div class="inner_box">
+												<p><strong>1 BOX</strong>&nbsp; I &nbsp;최대 4장</p>
+												<p><strong>장당 광고 단가 </strong>&nbsp; I &nbsp;40원~200원</p>
+											</div>
+										</div>
+										<div class="table_wrap">
+											<table>
+												<caption>사이즈 테이블</caption>
+												<colgroup>
+													<col>
+													<col>
+													<col>
+													<col>
+												</colgroup>
+												<thead>
+													<tr>
+														<th>스티커 종류</th>
+														<th>택배상자 크기</th>
+														<th>광고이미지<br>(사이즈)</th>
+														<th>광고이미지<br>(해상도)</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<th>중형</th>
+														<td>X</td>
+														<td>X</td>
+														<td></td>
+													</tr>
+													<tr>
+														<th>소형</th>
+														<td>X</td>
+														<td>X</td>
+														<td></td>
+													</tr>
+													
+												</tbody>
+											</table>
+											
+										</div>
+										<p>(주의) 광고 이미지 등록 시 위 기준 이상의 파일을 제공해야 고품질 인쇄 제작이 가능합니다.</p>
+									</div>
+								</div>
+								<div class="tab-content">
+									<p class="tab_title">제품 샘플 홍보 상품 소개</p>
+									<p>박스애드(BoxAds)의 제품 샘플 홍보는 기업 마케팅에 특화된 상품으로 소비자에게 신제품 홍보와 구매를 유도하여 매출을 증대시키고, 전단지/스티커 광고를 병행하면 소비자의 반응도 확인할 수 있습니다</p>
+									<div class="img_area">
+										<img src="#" alt="">
+									</div>
+									<div class="desc_list">
+										<ul>
+											<li>
+												<p class="tit">전국</p>
+												<p class="txt">제품의 샘플을 전국 소비자에게 직접 전달하여 제품 홍보 및 신규 구매를 유도하여 마케팅과 고객 확보까지 한번에 해결할 수 있습니다.</p>
+											</li>
+											<li>
+												<p class="tit">상자사이즈</p>
+												<p class="txt">택배상자(봉투) 크기에 맞는 샘플 종류를 선택하여 홍보 할 수 있습니다.</p>
+											</li>
+											<li>
+												<p class="tit">전단지</p>
+												<p class="txt">전단지/스티커 광고 상품 병행 시 QR code를 통해 소비자의 반응도 확인 할 수 있습니다.</p>
+											</li>
+											
+										</ul>
+									</div>
+									<div class="table_desc">
+										<div class="left_desc">
+											<div class="inner_box">
+												<p><strong>1 BOX</strong>&nbsp; I &nbsp;최대 5개</p>
+												<p><strong>개당 광고 단가 </strong>&nbsp; I &nbsp;70원~500원</p>
+											</div>
+										</div>
+										<div class="table_wrap">
+											<table>
+												<caption>사이즈 테이블</caption>
+												<colgroup>
+													<col>
+													<col>
+													<col>
+													<col>
+												</colgroup>
+												<thead>
+													<tr>
+														<th>샘플 종류</th>
+														<th>택배상자 크기</th>
+														<th>광고이미지<br>(사이즈)</th>
+														<th>광고이미지<br>(해상도)</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<th>중형</th>
+														<td>X</td>
+														<td>X</td>
+														<td></td>
+													</tr>
+													<tr>
+														<th>소형</th>
+														<td>X</td>
+														<td>X</td>
+														<td></td>
+													</tr>
+													
+												</tbody>
+											</table>
+											
+										</div>
+										<p>(주의) 광고 이미지 등록 시 위 기준 이상의 파일을 제공해야 고품질 인쇄 제작이 가능합니다.</p>
+									</div>
+								</div>
+							</div>
+						
+						</div>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript">UI.GuideTab();</script>
+	</div>
+	<!--// 광고유형 가이드 -->
+</body>
+<script type="text/javascript">
+
+	/*qr code  오픈 */
+	$('.qr_area  .btn_qrcode').on('click',function(){
+		$('.qr_area  .popup_qrcode').addClass('open');
+	});
+	/*qr code  닫기 */
+	$('.popup_qrcode  .btn_close').on('click',function(){
+		$('.qr_area  .popup_qrcode').removeClass('open');
+	});
+</script>
+</html>
