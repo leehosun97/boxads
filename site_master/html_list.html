@@ -1,0 +1,690 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+	<title></title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<meta name="author" content="" />
+<script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+	<style>
+		*{-webkit-text-size-adjust:none;}
+		html,body{width:100%;height:100%; min-width:800px;}
+		html, body, div, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, ul, li, fieldset, form, label, leging, table, caption, tbody, tfoot, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video{margin:0; padding:0; outline:0; font-family:NanumGothic,'나눔고딕',Dotum,'돋움',applegothic,sans-serif; font-size:13px; color:#555; /*vertical-align:baseline;*/}
+		body{line-height:1.2em; border:0;}
+		strong, em, span, wbr, a{display:inline-block;}
+		span{margin:0; padding:0; outline:0;}
+		hr{display:none}
+		ol, ul, ,dl, dt, dd{list-style:none outside none; padding:0; margin:0;}
+		fieldset, img, table, caption, tbody, tfoot, thead, tr, th, td, button, hr{border:0;}
+		address, caption, cite, code, dfn, em, strong, th, var{font-style: normal;}
+		img{vertical-align:middle;}
+		a{cursor:pointer; text-decoration:none; color:#666;}
+		table{border-collapse:collapse;}
+		#wrap{padding:12px;}
+		#header{margin-bottom:20px;}
+		#header::after{content:''; clear:both; display:block;}
+		#header>h1{float:left; font-size:28px; color:#1a1a1a; padding-top:15px;}
+		#header>div{float:right;}
+		#header>div>p{font-size:11px; color:#888; text-align:right;}
+		div.box{border:1px solid #dedede; background:#f1f1f1; padding:12px 14px; margin-bottom:10px;}
+		h3{font-size:14px; color:#333; margin-bottom:13px;}
+		h4{font-size:14px; color:#333; margin:25px 0 8px 5px;}
+		ol.atten>li{margin-bottom:8px; padding:0; line-height:160%;}
+		ol.atten>li:last-child{margin-bottom:0;}
+		table.htmllist th,table.htmllist td{border:1px solid #ccc;}
+		table.htmllist tr:first-child td{text-align:center; font-weight:bold; border-bottom:1px solid #111 !important; height:30px; color:#000 !important; font-size:13px !important;}
+		table.htmllist th{padding:5px 6px; text-align:left; border-bottom:2px solid #20494c !important; height:32px; background-color:#f3f4f8;}
+		table.htmllist th.depth2{padding: 2px 18px; text-align:left; border-bottom:1px solid #333 !important; height:30px; font-size: 12px; background-color: #fff}
+		table.htmllist td{padding:5px 6px;}
+		table.htmllist td:first-child{text-align:center;}
+		table.htmllist td:last-child{color:#888; font-size:12px;}
+		table.htmllist td:nth-child(4),table.htmllist td:nth-child(6),table.htmllist td:nth-child(7){text-align:center;}
+		table.htmllist td:nth-child(7){color:#5bcdda; font-size:11px; font-weight:bold;}
+		table.htmllist td > a{display:block; width:100%; height:26px; line-height:26px; text-align:center; color:#fff; font-size:11px; font-weight:bold; vertical-align:middle; background-color:#396e72; border:1px solid #20494c; border-radius:3px;}
+		table.htmllist td>a:hover{background-color:#e76405; line-height:28px;}
+		table.htmllist tr:hover>td{background-color:#fffad2;}
+		table.htmllist td.ing{text-align:center; font-size:12;}
+		table.htmllist td.end{text-align:center; font-size:12; font-weight:bold; background-color:#b8bbbf; color:#1a1a1a;}
+		/* .total{padding:10px 5px 20px} */
+		.total .tit_txt{padding-left:10px;margin-left:10px;border-left:1px solid #ddd;}
+		.total h3 + .tit_txt{padding-left:0;margin-left:0;border-left:none;}
+		.total_page_num{font-size:18px;color:#5bcdda;}
+	</style>
+</head>
+<body>
+<div id="wrap"  style="padding-bottom: 100px;">
+	<div id="header">
+		<h1>박스애드 관리자</h1>
+		<div>
+			<p>Version: <b>0.0.01</b></p>
+			<p>Last Update: <b>2019.05.30</b></p>
+			<p>Coding: <b>HTML5&amp;CSS3</b></p>
+			<!-- <p>Guide: <b><a href="guide/guide.html" target="_blank">guide.html</a></b></p> -->
+		</div>
+	</div>
+	<h4>코딩 목록</h4>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0" class="htmllist">
+		<thead>
+			<tr class="head">
+				<td>No</td>
+				<td>Path</td>
+				<td>FileName</td>
+				<td>State</td>
+				<td>View</td>
+				<td>Update</td>
+				<td>Author</td>
+				<td>Remark</td>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<th colspan="8">js</th>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/js/</td>
+				<td>jquery-1.12.4.min</td>
+				<td class="end">end</td>
+				<td>-</td>
+				<td>2019-07-11</td>
+				<td></td>
+				<td>제이쿼리 라이브러리</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/js/</td>
+				<td>jquery-ui.js</td>
+				<td class="end">end</td>
+				<td>-</td>
+				<td>2019-07-11</td>
+				<td></td>
+				<td>제이쿼리 ui 사용</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/js/</td>
+				<td>layout.js</td>
+				<td class="ing">ing</td>
+				<td>-</td>
+				<td>2019-07-11</td>
+				<td></td>
+				<td>공통 사용 스트립트</td>
+			</tr>
+		</tbody>
+		<tbody>
+			<tr>
+				<th colspan="8">css</th>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/css/</td>
+				<td>general.css</td>
+				<td class="end">end</td>
+				<td><a href="./css/general.css" target="_blank">View</a></td>
+				<td></td>
+				<td></td>
+				<td>모든 css를 한 곳에 모아 링크시키는 css</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/css/</td>
+				<td>common.css</td>
+				<td  class="ing">ing</td>
+				<td><a href="./css/common.css" target="_blank">View</a></td>
+				<td>2019-07-11</td>
+				<td></td>
+				<td>HTML속성 초기화 및 메인페이지를 제외한 모든 서브 페이지에서 공통 사용되는  css</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/css/</td>
+				<td>main.css</td>
+				<td class="ing">ing</td>
+				<td><a href="./css/main.css" target="_blank">View</a></td>
+				<td>2019-07-11</td>
+				<td></td>
+				<td>메인 css</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/css/</td>
+				<td>sub.css</td>
+				<td class="ing">ing</td>
+				<td><a href="./css/sub.css" target="_blank">View</a></td>
+				<td>2019-07-11</td>
+				<td></td>
+				<td>서브 페이지에 사용되는 css</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/css/</td>
+				<td>jquery-ui.css</td>
+				<td class="end">end</td>
+				<td><a href="./css/jquery-ui.css" target="_blank">View</a></td>
+				<td></td>
+				<td></td>
+				<td>제이쿼리 ui 사용 css</td>
+			</tr>
+		</tbody>
+		<tbody>
+			<tr>
+				<th colspan="8">메인</th>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/main/</td>
+				<td>member_main.jsp</td>
+				<td class="ing">ing</td>
+				<td><a href="./member/member_main.jsp" target="_blank">View</a></td>
+				<td>2019-07-11</td>
+				<td></td>
+				<td>메인</td>
+			</tr>
+			<tr>
+				<th colspan="8">로그인</th>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/login/</td>
+				<td>login.jsp</td>
+				<td class="end">end</td>
+				<td><a href="./login/login.jsp" target="_blank">View</a></td>
+				<td>2019-07-11</td>
+				<td></td>
+				<td>메인</td>
+			</tr>
+			<tr>
+				<th colspan="8">통합관리자</th>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/product_mgm/</td>
+				<td>box_list.jsp</td>
+				<td class="end">end</td>
+				<td><a href="./product_mgm/box_list.jsp" target="_blank">View</a></td>
+				<td>2019-07-11</td>
+				<td></td>
+				<td>상품관리 - 박스 리스트</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/product_mgm/</td>
+				<td>box_view.jsp</td>
+				<td class="end">end</td>
+				<td><a href="./product_mgm/box_view.jsp" target="_blank">View</a></td>
+				<td>2019-07-11</td>
+				<td></td>
+				<td>상품관리 - 박스 상세</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/product_mgm/</td>
+				<td>ads_list.jsp</td>
+				<td class="end">end</td>
+				<td><a href="./product_mgm/ads_list.jsp" target="_blank">View</a></td>
+				<td>2019-07-11</td>
+				<td></td>
+				<td>상품관리 - 애드 리스트</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/product_mgm/</td>
+				<td>ads_view.jsp</td>
+				<td class="end">end</td>
+				<td><a href="./product_mgm/ads_view.jsp" target="_blank">View</a></td>
+				<td>2019-07-11</td>
+				<td></td>
+				<td>상품관리 - 애드 상세</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/sub/</td>
+				<td>sale_box_list.jsp</td>
+				<td class="end">end</td>
+				<td><a href="./sub/sale_box_list.jsp" target="_blank">View</a></td>
+				<td>2019-07-11</td>
+				<td></td>
+				<td>주문관리 - 박스 판매 리스트</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/sub/</td>
+				<td>sale_box_view.jsp</td>
+				<td class="end">end</td>
+				<td><a href="./sub/sale_box_view.jsp" target="_blank">View</a></td>
+				<td>2019-07-11</td>
+				<td></td>
+				<td>주문관리 - 박스 판매 상세</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/sub/</td>
+				<td>sale_box_pop.jsp</td>
+				<td class="end">end</td>
+				<td><a href="./sub/sale_box_pop.jsp" target="_blank">View</a></td>
+				<td>2019-07-11</td>
+				<td></td>
+				<td>주문관리 - 박스 판매 팝업창</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/sub/</td>
+				<td>ad_request_list01.jsp</td>
+				<td class="end">end</td>
+				<td><a href="./sub/ad_request_list01.jsp" target="_blank">View</a></td>
+				<td>2019-07-11</td>
+				<td></td>
+				<td>주문관리 - 애드 신청 리스트01</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/sub/</td>
+				<td>ad_request_list02.jsp</td>
+				<td class="end">end</td>
+				<td><a href="./sub/ad_request_list02.jsp" target="_blank">View</a></td>
+				<td>2019-07-11</td>
+				<td></td>
+				<td>주문관리 - 애드 신청 리스트02</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/sub/</td>
+				<td>ad_request_view.jsp</td>
+				<td class="end">end</td>
+				<td><a href="./sub/ad_request_view.jsp" target="_blank">View</a></td>
+				<td>2019-07-11</td>
+				<td></td>
+				<td>주문관리 - 애드 신청 상세</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/sub/</td>
+				<td>ad_request_pop.jsp</td>
+				<td class="end">end</td>
+				<td><a href="./sub/ad_request_pop.jsp" target="_blank">View</a></td>
+				<td>2019-07-11</td>
+				<td></td>
+				<td>주문관리 - 애드 신청 팝업</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/sub/</td>
+				<td>calculate_mgm_list.jsp</td>
+				<td class="end">end</td>
+				<td><a href="./sub/calculate_mgm_list.jsp" target="_blank">View</a></td>
+				<td>2019-07-11</td>
+				<td></td>
+				<td>정산관리 - 정산관리 리스트</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/sub/</td>
+				<td>calculate_mgm_pop01.jsp</td>
+				<td class="end">end</td>
+				<td><a href="./sub/calculate_mgm_pop01.jsp" target="_blank">View</a></td>
+				<td>2019-07-11</td>
+				<td></td>
+				<td>정산관리 - 정산관리 지급이력 팝업</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/sub/</td>
+				<td>calculate_mgm_pop02.jsp</td>
+				<td class="end">end</td>
+				<td><a href="./sub/calculate_mgm_pop02.jsp" target="_blank">View</a></td>
+				<td>2019-07-11</td>
+				<td></td>
+				<td>정산관리 - 보류 팝업</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/sub/</td>
+				<td>calculate_mgm_pop03.jsp</td>
+				<td class="end">end</td>
+				<td><a href="./sub/calculate_mgm_pop03.jsp" target="_blank">View</a></td>
+				<td>2019-07-11</td>
+				<td></td>
+				<td>정산관리 - 부분취소 팝업</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/sub/</td>
+				<td>payment_list.jsp</td>
+				<td class="end">end</td>
+				<td><a href="./sub/payment_list.jsp" target="_blank">View</a></td>
+				<td>2019-07-11</td>
+				<td></td>
+				<td>정산관리 - 결제(충전)관리 리스트</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/sub/</td>
+				<td>withdraw_mgm.jsp</td>
+				<td class="end">end</td>
+				<td><a href="./sub/withdraw_mgm.jsp" target="_blank">View</a></td>
+				<td>2019-07-11</td>
+				<td></td>
+				<td>정산관리 - 출금관리</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/sub/</td>
+				<td>evdn_list.jsp</td>
+				<td class="end">end</td>
+				<td><a href="./sub/evdn_list.jsp" target="_blank">View</a></td>
+				<td>2019-07-11</td>
+				<td></td>
+				<td>정산관리 - 증빙자료 관리 리스트</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/sub/</td>
+				<td>evdn_view.jsp</td>
+				<td class="end">end</td>
+				<td><a href="./sub/evdn_view.jsp" target="_blank">View</a></td>
+				<td>2019-07-11</td>
+				<td></td>
+				<td>정산관리 - 증빙자료 관리 상세</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/sub/</td>
+				<td>coupon_mgm_list.jsp</td>
+				<td class="end">end</td>
+				<td><a href="./sub/coupon_mgm_list.jsp" target="_blank">View</a></td>
+				<td>2019-07-11</td>
+				<td></td>
+				<td>부가기능관리 - 쿠폰관리 리스트</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/sub/</td>
+				<td>coupon_mgm_write.jsp</td>
+				<td class="end">end</td>
+				<td><a href="./sub/coupon_mgm_write.jsp" target="_blank">View</a></td>
+				<td>2019-07-11</td>
+				<td></td>
+				<td>부가기능관리 - 쿠폰관리 등록</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/sub/</td>
+				<td>coupon_mgm_view.jsp</td>
+				<td class="end">end</td>
+				<td><a href="./sub/coupon_mgm_view.jsp" target="_blank">View</a></td>
+				<td>2019-07-11</td>
+				<td></td>
+				<td>부가기능관리 - 쿠폰관리 상세</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/sub/</td>
+				<td>main_bnr_list.jsp</td>
+				<td class="end">end</td>
+				<td><a href="./sub/main_bnr_list.jsp" target="_blank">View</a></td>
+				<td>2019-07-11</td>
+				<td></td>
+				<td>사이트관리 - 메인 베너 리스트</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/sub/</td>
+				<td>main_bnr_view.jsp</td>
+				<td class="end">end</td>
+				<td><a href="./sub/main_bnr_view.jsp" target="_blank">View</a></td>
+				<td>2019-07-11</td>
+				<td></td>
+				<td>사이트관리 - 메인 베너 상세</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/sub/</td>
+				<td>main_bnr_write01.jsp</td>
+				<td class="end">end</td>
+				<td><a href="./sub/main_bnr_write01.jsp" target="_blank">View</a></td>
+				<td>2019-07-11</td>
+				<td></td>
+				<td>사이트관리 - 메인 베너 등록</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/sub/</td>
+				<td>main_bnr_write02.jsp</td>
+				<td class="end">end</td>
+				<td><a href="./sub/main_bnr_write02.jsp" target="_blank">View</a></td>
+				<td>2019-07-11</td>
+				<td></td>
+				<td>사이트관리 - 메인 베너 수정</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/sub/</td>
+				<td>bnr_alarm_list.jsp</td>
+				<td class="end">end</td>
+				<td><a href="./sub/bnr_alarm_list.jsp" target="_blank">View</a></td>
+				<td>2019-07-11</td>
+				<td></td>
+				<td>사이트관리 - 알림 관리 리스트</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/sub/</td>
+				<td>bnr_alarm_view.jsp</td>
+				<td class="end">end</td>
+				<td><a href="./sub/bnr_alarm_view.jsp" target="_blank">View</a></td>
+				<td>2019-07-11</td>
+				<td></td>
+				<td>사이트관리 - 알림 관리 상세</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/sub/</td>
+				<td>bnr_alarm_write01.jsp</td>
+				<td class="end">end</td>
+				<td><a href="./sub/bnr_alarm_write01.jsp" target="_blank">View</a></td>
+				<td>2019-07-11</td>
+				<td></td>
+				<td>사이트관리 - 알림 관리 등록</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/sub/</td>
+				<td>bnr_alarm_write02.jsp</td>
+				<td class="end">end</td>
+				<td><a href="./sub/bnr_alarm_write02.jsp" target="_blank">View</a></td>
+				<td>2019-07-11</td>
+				<td></td>
+				<td>사이트관리 - 알림 관리 수정</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/sub/</td>
+				<td>terms.jsp</td>
+				<td class="end">end</td>
+				<td><a href="./sub/terms.jsp" target="_blank">View</a></td>
+				<td>2019-07-11</td>
+				<td></td>
+				<td>사이트관리 - 약관 관리</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/sub/</td>
+				<td>cancel.jsp</td>
+				<td class="end">end</td>
+				<td><a href="./sub/cancel.jsp" target="_blank">View</a></td>
+				<td>2019-07-11</td>
+				<td></td>
+				<td>사이트관리 - 취소 / 환불 정책</td>
+			</tr>
+            <tr>
+				<td></td>
+				<td>/sub/</td>
+				<td>activity_member.jsp</td>
+				<td class="end">end</td>
+				<td><a href="./sub/activity_member.jsp" target="_blank">View</a></td>
+				<td>2019-07-11</td>
+				<td></td>
+				<td>회원관리 - 활동회원 리스트</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/sub/</td>
+				<td>activity_member_view.jsp</td>
+				<td class="end">end</td>
+				<td><a href="./sub/activity_member_view.jsp" target="_blank">View</a></td>
+				<td>2019-07-11</td>
+				<td></td>
+				<td>회원관리 - 활동회원 상세</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/sub/</td>
+				<td>rest_member.jsp</td>
+				<td class="end">end</td>
+				<td><a href="./sub/rest_member.jsp" target="_blank">View</a></td>
+				<td>2019-07-11</td>
+				<td></td>
+				<td>회원관리 - 휴면 회원</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/sub/</td>
+				<td>scs_member.jsp</td>
+				<td class="end">end</td>
+				<td><a href="./sub/scs_member.jsp" target="_blank">View</a></td>
+				<td>2019-07-11</td>
+				<td></td>
+				<td>회원관리 - 탈퇴 회원</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/sub/</td>
+				<td>masse_mgm.jsp</td>
+				<td class="end">end</td>
+				<td><a href="./sub/masse_mgm.jsp" target="_blank">View</a></td>
+				<td>2019-07-11</td>
+				<td></td>
+				<td>회원관리 - 메시지 관리</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/sub/</td>
+				<td>master_list.jsp</td>
+				<td class="end">end</td>
+				<td><a href="./sub/master_list.jsp" target="_blank">View</a></td>
+				<td>2019-07-11</td>
+				<td></td>
+				<td>설정 - 운영자 관리 리스트</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/sub/</td>
+				<td>master_write.jsp</td>
+				<td class="end">end</td>
+				<td><a href="./sub/master_write.jsp" target="_blank">View</a></td>
+				<td>2019-07-11</td>
+				<td></td>
+				<td>설정 - 운영자 관리 등록/수정</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/sub/</td>
+				<td>code_list.jsp</td>
+				<td class="end">end</td>
+				<td><a href="./sub/code_list.jsp" target="_blank">View</a></td>
+				<td>2019-07-11</td>
+				<td></td>
+				<td>설정 - 코드관리 리스트</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/sub/</td>
+				<td>code_write01.jsp</td>
+				<td class="end">end</td>
+				<td><a href="./sub/code_write01.jsp" target="_blank">View</a></td>
+				<td>2019-07-11</td>
+				<td></td>
+				<td>설정 - 코드관리 등록/수정 01</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/sub/</td>
+				<td>code_write02.jsp</td>
+				<td class="end">end</td>
+				<td><a href="./sub/code_write02.jsp" target="_blank">View</a></td>
+				<td>2019-07-11</td>
+				<td></td>
+				<td>설정 - 코드관리 등록/수정 02</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/sub/</td>
+				<td>code_write03.jsp</td>
+				<td class="end">end</td>
+				<td><a href="./sub/code_write03.jsp" target="_blank">View</a></td>
+				<td>2019-07-11</td>
+				<td></td>
+				<td>설정 - 코드관리 등록/수정 03</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/sub/</td>
+				<td>unit_price.jsp</td>
+				<td class="end">end</td>
+				<td><a href="./sub/unit_price.jsp" target="_blank">View</a></td>
+				<td>2019-07-11</td>
+				<td></td>
+				<td>설정 - 단가관리</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/sub/</td>
+				<td>fees.jsp</td>
+				<td class="end">end</td>
+				<td><a href="./sub/fees.jsp" target="_blank">View</a></td>
+				<td>2019-07-11</td>
+				<td></td>
+				<td>설정 - 수수료관리</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/sub/</td>
+				<td>copy_mgm_list.jsp</td>
+				<td class="end">end</td>
+				<td><a href="./sub/copy_mgm_list.jsp" target="_blank">View</a></td>
+				<td>2019-07-11</td>
+				<td></td>
+				<td>인쇄관리 - 인쇄관리 리스트</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/sub/</td>
+				<td>copy_mgm_view.jsp</td>
+				<td class="end">end</td>
+				<td><a href="./sub/copy_mgm_view.jsp" target="_blank">View</a></td>
+				<td>2019-07-11</td>
+				<td></td>
+				<td>인쇄관리 - 인쇄관리 상세</td>
+			</tr>			
+		</tbody>
+	</table>
+</div>
+<script>
+	var totalPageNum = 0;
+	$('tbody').each(function(idx){
+		var titTxt = $('tbody').eq(idx).find('th').text();
+		$('.total').append('<span class="tit_txt">' + titTxt + ': </span>')
+		$(this).find('tr').each(function(i){
+			$(this).find('td:first-child').text(i);
+			num = $(this).filter(':last-child').find('td:first-child').text();
+		});
+		$('.total').append('<strong>' + num + '</strong>');
+		totalPageNum += parseInt(num);
+	});
+	$('.total h3').append('<strong class="total_page_num">' + totalPageNum + '</strong>');
+	console.log($('tbody tr').length)
+</script>
+</body>
+</html>

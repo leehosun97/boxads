@@ -1,0 +1,807 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<!-- head 영역 -->
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="Author" content="">
+	<meta name="Keywords" content="">
+	<meta name="Description" content="">
+	<meta property="og:image" content="/favicon/og-image.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+	<title>boxads</title>
+    <link rel="stylesheet" href="../css/general.css?v=1910">
+	<script src="../js/jquery-1.12.4.min.js"></script>
+	<script src="../js/jquery-ui.js"></script>
+	<script src="../js/layout.js"></script>
+	
+	<!--슬라이더 관련 호출 -->
+	<link rel="stylesheet" href="../css/swiper.css">
+	<script src="../js/swiper.min.js"></script>
+	<!--//슬라이더 관련 호출 끝 -->
+	<!-- head 영역 끝 -->
+</head>
+<body>
+	<div id="wrap">
+	<!-- gnb 영역 -->
+		<div id="promo" class="active">
+			<div class="promo_inner">
+				<div class="promo_slider">
+					<div class="swiper-wrapper">
+						<div class="promo-content swiper-slide">
+							<p>회원가입 후 첫 구매 시 최대 10,000원 할인 <a href="#" class="go">구매하러가기</a></p>
+						</div>
+						<div class="promo-content swiper-slide">
+							<p>회원가입 후 첫 구매 시 최대 10,000원 할인 <a href="#" class="go">구매하러가기</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="promo-pager">
+				</div>
+				<button type="button" class="promo_close">Close</button>
+			</div>
+		</div>
+		<header id="header">
+			<div class="inner">
+				<div class="header_top">
+					<div class="top_left">
+						<h1 class="logo"><a href="#">Boxads</a></h1>
+						<div class="srch_wrap">
+							<form action="#" method="get">
+								<input type="text" name="keyword" id="header_srch" placeholder="검색어를 입력하세요.">
+								<label for="header_srch" class="blind">검색</label>
+								<button type="button" class="btn delete">삭제</button>
+								<button type="submit" class="btn">검색</button>
+							</form>
+						</div>
+						<button type="button" class="btn btn_menu" onclick="btn_menu_open();">메뉴열기</button>
+					</div>
+					<div class="top_right">
+						<ul class="util customer">
+							<li>
+								<a href="javascript:;">메시지</a>
+								<div class="over_wrap message">
+									<div class="inner">
+										<div class="over_tab">
+											<button type="button" class="btn on">메시지<i class="new">new</i></button>
+											<button type="button" class="btn">알림<i class="new">new</i></button>
+										</div>
+										<div class="tab_content" id="overTab0" style="display: block;">
+											<div class="scroll_wrap">
+												<div class="message_area">
+													<p class="m_date">18.09.24(월)</p>
+													 <div class="message clearfix">
+														<div class="img_area fl_l"><img src="../images/common/profile_img02.png" alt="프로필이미지"></div>
+														<div class="txt_area fl_l">
+															<a href="#" class="txt">메시지가 도착했습니다. 최대 한 줄 표기 최대 한 줄 표기 최대 한 줄 표기..</a>
+															<p class="name">(주)비트박스</p>
+														</div>
+													</div>
+												</div>
+												<div class="message_area">
+													<p class="m_date">18.09.23(일)</p>
+													<div class="message clearfix">
+														<div class="img_area fl_l"><img src="../images/common/profile_img02.png" alt="프로필이미지"></div>
+														<div class="txt_area fl_l">
+															<a href="#" class="txt">메시지가 도착했습니다. 최대 한 줄 표기 최대 한 줄 표기 최대 한 줄 표기..</a>
+															<p class="name">(주)비트박스</p>
+														</div>
+													</div>
+													<div class="message clearfix">
+														<div class="img_area fl_l"><img src="../images/common/profile_img02.png" alt="프로필이미지"></div>
+														<div class="txt_area fl_l">
+															<a href="#" class="txt">메시지가 도착했습니다. 최대 한 줄 표기 최대 한 줄 표기 최대 한 줄 표기..</a>
+															<p class="name">(주)비트박스</p>
+														</div>
+													</div>
+												</div>
+												<div class="message_area">
+													<p class="m_date">18.09.22(토)</p>
+													 <div class="message clearfix">
+														<div class="img_area fl_l"><img src="../images/common/profile_img02.png" alt="프로필이미지"></div>
+														<div class="txt_area fl_l">
+															<a href="#" class="txt">메시지가 도착했습니다. 최대 한 줄 표기 최대 한 줄 표기 최대 한 줄 표기..</a>
+															<p class="name">(주)비트박스</p>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="link_area"><a href="#">전체보기<i></i></a></div>
+										</div>
+										<div class="tab_content" id="overTab1">
+											<div class="scroll_wrap">
+												<div class="message_area">
+													<p class="m_date">18.09.24(월)</p>
+													<div class="notice">
+														<div class="txt_area">
+															<a href="#" class="txt">메시지가 도착했습니다. 최대 한 줄 표기 최대 한 줄 표기 최대 한 줄 표기 최대 한 줄 표기 최대 한 줄 표기 최대 한 줄 표기  최대 한 줄 표기 최대 한 줄 표기 최대 한 줄 표기</a>
+														</div>
+													</div>
+													<div class="notice">
+														<div class="txt_area">
+															<a href="#" class="txt">메시지가 도착했습니다. 최대 한 줄 표기 최대 한 줄 표기 최대 한 줄 표기 최대 한 줄 표기 최대 한 줄 표기 최대 한 줄 표기  최대 한 줄 표기 최대 한 줄 표기 최대 한 줄 표기</a>
+														</div>
+													</div>
+												</div>
+												<div class="message_area">
+													<p class="m_date">18.09.23(일)</p>
+													<div class="notice">
+														<div class="txt_area">
+															<a href="#" class="txt">메시지가 도착했습니다. 최대 한 줄 표기 최대 한 줄 표기 최대 한 줄 표기 최대 한 줄 표기 최대 한 줄 표기 최대 한 줄 표기  최대 한 줄 표기 최대 한 줄 표기 최대 한 줄 표기</a>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="link_area"><a href="#">전체보기<i></i></a></div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<a href="javascript:;">박스(Box)</a>
+								<div class="over_wrap">
+									<div class="inner">
+										<ul>
+											<li><a href="#">마이 박스 판매</a></li>
+											<li><a href="#">박스 구매</a></li>
+											<li><a href="#">마이 박스 관리</a></li>
+											<li><a href="#">마이 박스 등록</a></li>
+										</ul>
+									</div>
+								</div>
+							</li>
+							<li>
+								<a href="javascript:;">애드(Ads)</a>
+								<div class="over_wrap">
+									<div class="inner">
+										<ul>
+											<li><a href="#">마이 애드 요청</a></li>
+											<li><a href="#">애드 신청</a></li>
+											<li><a href="#">마이 애드 관리</a></li>
+											<li><a href="#">마이 애드 등록</a></li>
+										</ul>
+									</div>
+								</div>
+							</li>
+							<li class="profile">
+								<a href="#" class="clearfix">
+									<div class="img_area fl_l"><img src="../images/common/profile_img01.png" alt="프로필이미지"></div>
+									<p class="fl_l"><strong>웹비즈</strong>님</p>
+								</a>
+								<div class="over_wrap profile">
+									<div class="inner">
+										<ul>
+											<li><a href="#">지갑관리</a></li>
+											<li><a href="#">찜리스트</a></li>
+											<li><a href="#">메시지</a></li>
+											<li><a href="#">계정관리</a></li>
+											<li><a href="#">거래관리</a></li>
+											<li><a href="#">로그아웃</a></li>
+										</ul>
+									</div>
+								</div>
+							</li>
+						</ul> <!-- 로그인 후 -->
+						<!-- <ul class="util standard">
+							<li><a href="#">판매시작하기</a></li>
+							<li><a href="#">광고시작하기</a></li>
+							<li><a href="#" class="on">로그인</a></li>
+							<li class="bg"><a href="#">무료 회원가입</a></li>
+						</ul> --> <!-- 로그인 전 -->
+					</div>
+				</div>
+				<nav class="header_gnb">
+					<ul>
+						<li class="selected"><a href="javascript:;">패션의류</a></li>
+						<li><a href="javascript:;">뷰티·잡화</a></li>
+						<li><a href="javascript:;">출산·육아</a></li>
+						<li><a href="javascript:;">디지털·가전</a></li>
+						<li><a href="javascript:;">식품</a></li>
+						<li><a href="javascript:;">생활·건강</a></li>
+						<li><a href="javascript:;">스포츠·취미·반려</a></li>
+						<li><a href="javascript:;">레저·자동차</a></li>
+						<li><a href="javascript:;">도서·문구·티켓</a></li>
+					</ul>
+				</nav>
+				<nav class="mobile_gnb">
+					<div class="swiper-container">
+						<ul class="swiper-wrapper">
+							<li class="swiper-slide selected"><a href="javascript:;">패션의류</a></li>
+							<li class="swiper-slide"><a href="javascript:;">뷰티·잡화</a></li>
+							<li class="swiper-slide"><a href="javascript:;">출산·육아</a></li>
+							<li class="swiper-slide"><a href="javascript:;">디지털·가전</a></li>
+							<li class="swiper-slide"><a href="javascript:;">식품</a></li>
+							<li class="swiper-slide"><a href="javascript:;">생활·건강</a></li>
+							<li class="swiper-slide"><a href="javascript:;">스포츠·취미·반려</a></li>
+							<li class="swiper-slide"><a href="javascript:;">레저·자동차</a></li>
+							<li class="swiper-slide"><a href="javascript:;">도서·문구·티켓</a></li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</header>
+		<aside id="aside_menu">
+			<div class="aside_bg"></div>
+			<button class="btn btn_close" type="button" onclick="btn_menu_close();">닫음</button>
+			<div class="aside_wrap">
+				<div class="aside_info_wrap">
+					<div class="aside_info">
+						<div class="img_area"><img src="../images/common/profile_img01.png" alt="프로필이미지"></div>
+						<p class="name"><span><strong>웹비즈웹비즈웹비즈웹비즈웹비즈웹비즈</strong>님.</span></p>
+					</div>
+					<a href="#" class="btn btn_notice on">알림</a>
+					<a href="#" class="btn btn_setting">설정</a>
+				</div>
+				<div class="aside_info_wrap login_n" style="display: none;">
+					<div class="aside_info">
+						<div class="img_area"><img src="../images/common/no-profile.png" alt="프로필이미지"></div>
+						<p class="name"><span>로그인이<br> 필요합니다</span></p>
+					</div>
+					<div class="btn_area">
+						<a href="#" class="btn login">로그인</a>
+						<a href="#" class="btn join">회원가입</a>
+					</div>
+				</div>
+				<div class="aside_srch">
+					<input type="text" name="aside_search" id="aside_search" placeholder="검색어를 입력하세요">
+					<label for="aside_search" class="blind">검색어 입력</label>
+					<button type="button" class="btn delete">삭제</button>
+					<button type="button" class="btn">검색</button>
+				</div>
+				<div class="aside_list">
+					<ul>
+						<li><a href="#"><span>홈</span></a></li>
+					</ul>
+				</div>
+				<div class="aside_list aside_list02">
+					<ul>
+						<li><a href="#"><span>메시지</span></a></li>
+						<li><a href="#"><span>찜리스트</span></a></li>
+						<li><a href="#"><span>지갑관리</span></a></li>
+						<li><a href="#"><span>거래관리</span></a></li>
+					</ul>
+				</div>
+				<div class="aside_list aside_list02">
+					<ul>
+						<li class="depth">
+							<a href="javascript:;"><span>박스(Box)</span></a>
+							<ul class="depth2">
+								<li><a href="#">마이 박스 판매</a></li>
+								<li><a href="#">박스 구매</a></li>
+								<li><a href="#">마이 박스 관리</a></li>
+								<li><a href="#">마이 박스 등록</a></li>
+							</ul>
+						</li>
+						<li class="depth">
+							<a href="javascript:;"><span>애드(Ads)</span></a>
+							<ul class="depth2">
+								<li><a href="#">마이 애드 거래</a></li>
+								<li><a href="#">애드 신청</a></li>
+								<li><a href="#">마이 애드 관리</a></li>
+								<li><a href="#">마이 애드 등록</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div class="aside_list aside_list02">
+					<ul>
+						<li class="depth">
+							<a href="javascript:;"><span>이용안내</span></a>
+							<ul class="depth2">
+								<li><a href="#">서비스 소개</a></li>
+								<li><a href="#">판매자 박스(Box) 이용법</a></li>
+								<li><a href="#">광고주 박스(Ads) 이용법</a></li>
+							</ul>
+						</li>
+						<li><a href="javascript:;" class="aside_inquire"><span>고객센터</span></a></li>
+						<li><a href="#"><span>로그아웃</span></a></li>
+					</ul>
+				</div>
+				<div class="aside_sub">
+					<i class="cs"></i>
+					<div class="as_inner">
+						<p>고객센터</p>
+						<span><strong><a href="#">1588-0000</a></strong> (09:00 ~ 18:30)</span>
+					</div>
+				</div>
+			</div>
+		</aside>
+	<!-- //gnb 영역 끝-->	
+		<div id="container">
+			<div class="about_wrap">
+		<!-- 이용안내 시작 -->	
+				<div class="path">
+					<ul>
+						<li>홈</li>
+						<li>서비스 소개</li>
+					</ul>
+				 </div>
+				 <div class="about_tit">
+					<h3>서비스 소개</h3>
+				 </div>
+				 <div class="service_con1">
+					<div class="service_con1_wrap">
+						<ul>
+							<li>
+								<div class="img_wrap">
+									<img src="../images/etc/service_con1_img.png" alt="서비스소개 이미지">
+								</div>
+							</li>
+							<li>
+								<div class="txt_box">
+									<div class="tit">
+										<h4>
+											“ 매일 온라인 쇼핑에서 특정 브랜드 제품을
+											구매한 <strong>고객에게 타겟 광고</strong>를 보내세요 ”
+										</h4>
+									</div>
+									<div class="txt_wrap">
+										<h5>박스(Box)</h5>
+										<p>매일 고객에게 보내는 택배 포장 시 간단한 작업으로 추가 수익을 얻을 수 있습니다.</p>
+										<div class="btn_area">
+											<a href="#" class="btn">쇼핑몰 판매자 이용 안내</a>
+										</div>
+									</div>
+									<div class="txt_wrap">
+										<h5>애드(Ads)</h5>
+										<p>단 몇분만 투자하면 귀사의 제품, 서비스, 브랜드를 전국에 있는 소비자에게 100&#37; 도달하는 홍보를 할 수 있습니다.</p>
+										<div class="btn_area type02">
+											<a href="#" class="btn">광고주 이용 안내</a>
+										</div>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>			
+				 </div>
+				 <div class="service_con2">
+					<div class="service_con2_wrap type_table">
+							<div class="left_con">
+								<div class="img_wrap">
+									<div class="img_box pc">
+										<img src="../images/etc/service_con2_img.png" alt="광고주 박스애드(BoxAds) 소비자 쇼핑몰 판매자">
+									</div>
+								</div>
+							</div>
+							<div class="right_con">
+								<div class="txt_box">
+									<div><strong>박스애드(BoxAds)</strong>는 택배상자의 남는 공간에 <strong>광고주</strong>의 <strong>홍보물을 같이 포장, 발송</strong>하여 전국 <strong>소비자</strong>에게 <strong>저렴하고 효과적으로 배포</strong>할 수 있는 신개념 <strong>광고 중개 서비스</strong>입니다.</div>
+									<p class="frs">광고주는 관심 제품을 판매하는 판매자의 박스(Box) 상품을 구매하면 됩니다.</p>
+									<p class="sc">박스애드가 광고주 홍보물을 제작(인쇄)하여 판매자에게 전달하면 판매자는 택배 포장 시 홍보물을 동봉하여 발송하면 광고비를 지급받습니다.</p>
+									<p class="th">소비자는 기다리던 택배 상자를 설레는 마음으로 열어보다, 동봉된 홍보물을 읽어보고 QR code를 스캔하여 광고주 프로모션에 참여합니다.</p>
+								</div>
+							</div>
+					</div>
+				 </div>
+				 <div class="service_con3">
+				 	<div class="tit_box">
+						<h4>박스애드 광고 상품 구성</h4>
+						<p>택배를 보낼 때 상자(봉투) 안과 밖의 빈 공간에 광고를 동봉할 수 있는 상품기획</p>
+					</div>
+					<div class="service_con3_wrap">
+						<ul>
+							<li>
+								<div class="img_wrap">
+									<div class="img_box">
+										이미지영역
+									</div>
+								</div>
+								<div class="txt_box">
+									<p class="txt_purple">전단지 광고</p>
+									<div class="txt_wrap">
+										<p>
+											전단지는 소비자에게 확실히 배포되고 읽혀지면 
+											다른 광고 매체보다 홍보 효과가 높고, 저렴한
+											비용으로 누구나 손쉽게 할 수 있어 
+											오래토록 사랑받는 홍보 수단입니다. 
+										</p>
+									</div>
+								</div>
+								<div class="btn_area align_c">
+									<a href="#" class="btn">상품 자세히 보기</a>
+								</div>
+							</li>
+							<li>
+								<div class="img_wrap">
+									<div class="img_box">
+										이미지영역
+									</div>
+								</div>
+								<div class="txt_box">
+									<p class="txt_purple">스티커 광고</p>
+									<div class="txt_wrap">
+										<p>
+											택배상자의 옆 면은 고객에게 배송되고
+											재활용장으로 보내지기까지
+											많은 사람들에게 노출됩니다.
+											특정, 불특정 소비자 대상 홍보를 해보세요.
+										</p>
+									</div>
+								</div>
+								<div class="btn_area align_c">
+									<a href="#" class="btn">상품 자세히 보기</a>
+								</div>
+							</li>
+							<li>
+								<div class="img_wrap">
+									<div class="img_box">
+										이미지영역
+									</div>
+								</div>
+								<div class="txt_box">
+									<p class="txt_purple">제품 샘플 홍보</p>
+									<div class="txt_wrap">
+										<p>
+											소비자의 구매에 도움을 주기 위해 제품의 샘플을
+											제작하여 많이 배포를 합니다. 인건비 걱정없이
+											소비자를 찾아 집과 사무실 안까지
+											도달하는 배포 방법을 이용해보세요.
+										</p>
+									</div>
+								</div>
+								<div class="btn_area align_c">
+									<a href="#" class="btn">상품 자세히 보기</a>
+								</div>
+							</li>
+						</ul>
+					</div>
+				 </div>
+				 <div class="service_con4">
+					<div class="txt_box">
+						<p>총 누적 광고 중개 거래 금액</p>
+						<p><strong>000,000,000 </strong>원 / <strong>000,000,000 </strong>건</p>
+					</div>
+				 </div>
+				 <div class="service_con3 type02">
+					<div class="tit_box">
+						<h4>총 000,000,000개 택배 박스(Box) 등록</h4>
+						<p>관심 있는 상품을 지금 찾아 보세요. 다양한 온라인 쇼핑 고객에게 지금 광고를 할 수 있습니다.</p>
+					</div>
+					<div class="box_upload">
+						<ul>
+							<li>
+								<div class="img_wrap">
+									<div class="img_box type01">
+										<span>패션 의류</span>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="img_wrap">
+									<div class="img_box type02">
+										<span>뷰티 · 잡화</span>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="img_wrap">
+									<div class="img_box type03">
+										<span>육아 · 출산</span>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="img_wrap">
+									<div class="img_box type04">
+										<span>디지털 · 가전</span>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				 </div>
+				 <div class="service_con3">
+					<div class="tit_box">
+						<h4>총 000,000개 광고 애드(Ads) 등록</h4>
+						<p>중개 거래는 상호 요구가 맞아야 성사됩니다. 기다리지 말고 적극적으로 광고를 유치하세요.</p>
+					</div>
+					<div class="box_upload type02">
+						<ul>
+							<li>
+								<div class="img_wrap">
+									<div class="img_box">
+										<img src="../images/etc/ads_box_img0123.png" alt="이미지1">
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="img_wrap">
+									<div class="img_box">
+										<img src="../images/etc/ads_box_img0123.png" alt="이미지2">
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="img_wrap">
+									<div class="img_box">
+										<img src="../images/etc/ads_box_img0123.png" alt="이미지3">
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="img_wrap">
+									<div class="img_box">
+										<div class="img_box">
+										<img src="../images/etc/ads_box_img0123.png" alt="이미지4">
+									</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="img_wrap">
+									<div class="img_box">
+										<img src="../images/etc/ads_box_img0123.png" alt="이미지5">
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="img_wrap">
+									<div class="img_box">
+										<img src="../images/etc/ads_box_img0123.png" alt="이미지6">
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="img_wrap">
+									<div class="img_box">
+										<img src="../images/etc/ads_box_img0123.png" alt="이미지7">
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="img_wrap">
+									<div class="img_box">
+										<img src="../images/etc/ads_box_img0123.png" alt="이미지8">
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="img_wrap">
+									<div class="img_box">
+										<img src="../images/etc/ads_box_img0123.png" alt="이미지9">
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="img_wrap">
+									<div class="img_box">
+										<img src="../images/etc/ads_box_img0123.png" alt="이미지10">
+									</div>
+								</div>
+							</li>
+						</ul>
+						<div class="btn_area align_c">
+							<a href="#" class="btn">더 많은 애드(Ads) 보러 가기</a>
+						</div>
+					</div>
+				 </div>
+				 <div class="service_con3 type02">
+				 	<div class="tit_box">
+						<h4>광고주, 쇼핑몰 판매자, 소비자 모두 만족하는 광고 중개 서비스</h4>
+						<p>이 보다 더 만족할 수는 없다. 이용자 모두를 위한 진정한 중개 플랫폼, 박스애드(BoxAds) 입니다!</p>
+					</div>
+					<!-- Swiper -->
+					<div class="product">
+						  <div class="swiper-container product_sli">
+							<div class="swiper-wrapper">
+							  <div class="swiper-slide">
+								<div class="img_wrap">
+									<div class="img_box">
+										<img src="../images/etc/sie_bg.jpg" alt="슬라이드 이미지">
+									</div>
+								</div>
+								<div class="txt_box">
+									<p class="txt_purple">OOOO (광고주)</p>
+									<p>이보다 더 만족할 수는 없다,</p>
+									<p>앞으로도 계속 이용하고 싶은 광고 서비스이다.</p>
+								</div>
+							  </div>
+							  <div class="swiper-slide">
+									<div class="img_wrap">
+										<div class="img_box">
+											<img src="../images/etc/sie_bg.jpg" alt="슬라이드 이미지">
+										</div>
+									</div>
+									<div class="txt_box">
+										<p class="txt_purple">OOOO (판매자)</p>
+										<p>기대보다 큰 추가 수익에 사업에 도움이 많이 됩니다.</p>
+										<p>택배 비용을 상쇠하는 수익.</p>
+									</div>
+							  </div>
+							  <div class="swiper-slide">
+								<div class="img_wrap">
+									<div class="img_box">
+										<img src="../images/etc/sie_bg.jpg" alt="슬라이드 이미지">
+									</div>
+								</div>
+								<div class="txt_box">
+									<p class="txt_purple">OOOO (소비자)</p>
+									<p>온라인 쇼핑을 하면서 어떤 새로운 제품,</p>
+									<p>서비스 광고를 받게 될지 이젠 기대하게 되요. 맞춤 정보가 ...</p>
+								</div>
+							  </div>
+								<div class="swiper-slide">
+								<div class="img_wrap">
+									<div class="img_box">
+										<img src="../images/etc/sie_bg.jpg" alt="슬라이드 이미지">
+									</div>
+								</div>
+								<div class="txt_box">
+									<p class="txt_purple">OOOO (광고주)</p>
+									<p>이보다 더 만족할 수는 없다,</p>
+									<p>앞으로도 계속 이용하고 싶은 광고 서비스이다.</p>
+								</div>
+							  </div>
+							  <div class="swiper-slide">
+									<div class="img_wrap">
+										<div class="img_box">
+											<img src="../images/etc/sie_bg.jpg" alt="슬라이드 이미지">
+										</div>
+									</div>
+									<div class="txt_box">
+										<p class="txt_purple">OOOO (판매자)</p>
+										<p>기대보다 큰 추가 수익에 사업에 도움이 많이 됩니다.</p>
+										<p>택배 비용을 상쇠하는 수익.</p>
+									</div>
+							  </div>
+							  <div class="swiper-slide">
+								<div class="img_wrap">
+									<div class="img_box">
+										<img src="../images/etc/sie_bg.jpg" alt="슬라이드 이미지">
+									</div>
+								</div>
+								<div class="txt_box">
+									<p class="txt_purple">OOOO (소비자)</p>
+									<p>온라인 쇼핑을 하면서 어떤 새로운 제품,</p>
+									<p>서비스 광고를 받게 될지 이젠 기대하게 되요. 맞춤 정보가 ...</p>
+								</div>
+							  </div>							  
+							</div>
+							<!-- Add Arrows -->
+							<div class="swiper-button-next"></div>
+							<div class="swiper-button-prev"></div>
+							<!-- Add Pagination -->
+						  </div>
+					  </div>
+				</div>
+				<div class="service_con5">
+					<div class="advice_wrap">
+						<ul>
+							<li class="fst">
+								<div class="txt_box">
+									<div class="txt_purple">소비자에게 새로운 광고를 하고 싶으세요?</div>
+									<div class="txt_wrap">
+										<p>포털 검색 광고, SNS 마케팅을 해보셨다면, </p>
+										<p>이젠 박스애드(BoxAds) 광고를 시작하세요. </p>
+										<p>비용대비 높은 광고 효과를 경험하실 수 있습니다.</p>
+										<div class="txt_p">
+											<span>도달률 <strong>95</strong>&#37;</span>
+											<i class="arrow"></i>
+											<span>확인률 <strong>100</strong>&#37;</span>
+										</div>
+									</div>
+									<div class="btn_area">
+										<a href="#" class="btn">신규 광고 애드(Ads) 등록 하기</a>
+									</div>
+								</div>
+							</li>
+							<li class="sc">
+								<div class="txt_box">
+									<div class="txt_purple">쇼핑몰 운영하며 신규 수익이 필요하세요?</div>
+									<div class="txt_wrap">
+										<p>온라인 쇼핑몰 매출이 늘어도 고정비용이 같이 늘어나면, </p>
+										<p>수익률 제자리로 고민이셨다면 박스애드를 시작하세요. </p>
+										<p>택배 포장 시 간단한 작업으로 기대 이상의 추가 수익을 얻을 수 있습니다.</p>
+										<div class="txt_p">
+											<span>기존 <strong>0</strong>원</span>
+											<i class="vs"></i>
+											<span>박스애드<strong>전액</strong>신규</span>
+										</div>
+									</div>
+									<div class="btn_area">
+										<a href="#" class="btn">신규 택배 박스(Box) 등록 하기</a>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+														
+		<!-- 이용안내 끝 -->
+			</div>
+		</div>
+		<!--footer -->
+		<footer id="footer">
+			<div class="floatingBtnWrap">
+				<div class="floatingBtn">
+					<a href="javascript:;" class="ftTop"><span>상단으로 이동</span></a>
+				</div>
+			</div>
+			<div class="m_list">
+				<a href="#" class="btn">회사소개</a>
+				<a href="#" class="btn">이용약관</a>
+				<a href="#" class="btn">개인정보처리방침</a>
+			</div>
+			<div class="inner">
+				<div class="foot_l">
+					<h2 class="logo"><a href="javascript:;">boxads</a></h2>
+					<div class="footer_info">
+						<span class="call"><i>전화번호</i>02-0000-0000</span>
+						<span class="mail"><i>이메일</i>help@boxads.io</span>
+						<span class="location"><i>주소</i>서울시 서초구 강남대로369, 12층</span>
+					</div>
+					<div class="address">
+						<span>(주)스튜디오엑스코</span><span>대표: 김정석</span><span>개인보호책임: 최종인</span> <br />
+						<span>사업자등록번호 116-81-77652</span><span>통신판매업신고: 2014-서울 강남-01471호</span>
+						<span class="db">&copy; BOXAD</span>
+					</div>
+					<div class="footer_sub_info">
+						<h3>고객센터</h3>
+						<p><strong>1588-0000</strong> 평일 오전 10시 ~ 오후 6시(주말, 공휴일 제외)</p>
+						<div class="footer_sns">
+							<a href="#" class="sns01" target="_blank">페이스북 새창이동</a>
+							<a href="#" class="sns02" target="_blank">유투브 새창이동</a>
+							<a href="#" class="sns03" target="_blank">인스타그램 새창이동</a>
+							<a href="#" class="sns04" target="_blank">트위터 새창이동</a>
+						</div>
+					</div>
+				</div>
+				<div class="foot_r">
+					<dl>
+						<dt>ABOUT</dt>
+						<dd><a href="#">회사소개</a></dd>
+						<dd><a href="#">서비스소개</a></dd>
+					</dl>
+					<dl>
+						<dt>이용안내</dt>
+						<dd><a href="#">판매자 박스(Box) 이용법</a></dd>
+						<dd><a href="#">광고주 애드(Ads) 이용법</a></dd>
+					</dl>
+					<dl>
+						<dt>고객센터</dt>
+						<dd><a href="#">공지사항</a></dd>
+						<dd><a href="#">FAQ</a></dd>
+						<dd><a href="#">1:1문의</a></dd>
+						<dd><a href="#">이용약관</a></dd>
+						<dd><a href="#">개인정보 취급방침</a></dd>
+					</dl>
+				</div>
+			</div>
+		</footer>
+		<!--// footer 끝 -->
+	</div>
+</body>
+  <script src="../package/js/swiper.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper('.swiper-container.product_sli', {
+      slidesPerView: 3,
+	  spaceBetween: 32,
+      slidesPerGroup: 1,
+      loop: true,
+      loopFillGroupWithBlank: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+	   breakpoints: {
+        // when window width is <= 640px
+        799: {
+            slidesPerView: 1,
+			slidesPerGroup: 1
+
+        }
+    }
+    });
+
+  </script>
+</html>

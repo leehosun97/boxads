@@ -1,0 +1,831 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+	<title>Boxads 마크업리스트</title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<meta name="author" content="" />
+<script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+	<style>
+		*{-webkit-text-size-adjust:none;}
+		html,body{width:100%;height:100%; min-width:800px;}
+		html, body, div, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, ul, li, fieldset, form, label, leging, table, caption, tbody, tfoot, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video{margin:0; padding:0; outline:0; font-family:NanumGothic,'나눔고딕',Dotum,'돋움',applegothic,sans-serif; font-size:13px; color:#555; /*vertical-align:baseline;*/}
+		body{line-height:1.2em; border:0;}
+		strong, em, span, wbr, a{display:inline-block;}
+		span{margin:0; padding:0; outline:0;}
+		hr{display:none}
+		ol, ul, ,dl, dt, dd{list-style:none outside none; padding:0; margin:0;}
+		fieldset, img, table, caption, tbody, tfoot, thead, tr, th, td, button, hr{border:0;}
+		address, caption, cite, code, dfn, em, strong, th, var{font-style: normal;}
+		img{vertical-align:middle;}
+		a{cursor:pointer; text-decoration:none; color:#666;}
+		table{border-collapse:collapse;}
+		#wrap{padding:12px;}
+		#header{margin-bottom:20px;}
+		#header::after{content:''; clear:both; display:block;}
+		#header>h1{float:left; font-size:28px; color:#1a1a1a; padding-top:15px;}
+		#header>div{float:right;}
+		#header>div>p{font-size:11px; color:#888; text-align:right;}
+		div.box{border:1px solid #dedede; background:#f1f1f1; padding:12px 14px; margin-bottom:10px;}
+		h3{font-size:14px; color:#333; margin-bottom:13px;}
+		h4{font-size:14px; color:#333; margin:25px 0 8px 5px;}
+		ol.atten>li{margin-bottom:8px; padding:0; line-height:160%;}
+		ol.atten>li:last-child{margin-bottom:0;}
+		table.htmllist th,table.htmllist td{border:1px solid #ccc;}
+		table.htmllist tr:first-child td{text-align:center; font-weight:bold; border-bottom:1px solid #111 !important; height:30px; color:#000 !important; font-size:13px !important;}
+		table.htmllist th{padding:5px 6px; text-align:left; border-bottom:2px solid #5a217e !important; height:32px; background-color:#f3f4f8;}
+		table.htmllist th.depth2{padding: 2px 18px; text-align:left; border-bottom:1px solid #333 !important; height:30px; font-size: 12px; background-color: #fff}
+		table.htmllist td{padding:5px 6px;}
+		table.htmllist td:first-child{text-align:center;}
+		table.htmllist td:last-child{color:#888; font-size:12px;}
+		table.htmllist td:nth-child(4),table.htmllist td:nth-child(6),table.htmllist td:nth-child(7){text-align:center;}
+		table.htmllist td:nth-child(7){color:#5bcdda; font-size:11px; font-weight:bold;}
+		table.htmllist td > a{display:block; width:100%; height:26px; line-height:26px; text-align:center; color:#fff; font-size:11px; font-weight:bold; vertical-align:middle; background-color:#5a217e; border:1px solid #5a217e; border-radius:3px;}
+		table.htmllist td>a:hover{background-color:#9b5cc3; line-height:28px;}
+		table.htmllist tr:hover>td{background-color:#fffad2;}
+		table.htmllist td.ing{text-align:center; font-size:12;}
+		table.htmllist td.end{text-align:center; font-size:12; font-weight:bold; background-color:#b8bbbf; color:#1a1a1a;}
+		/* .total{padding:10px 5px 20px} */
+		.total .tit_txt{padding-left:10px;margin-left:10px;border-left:1px solid #ddd;}
+		.total h3 + .tit_txt{padding-left:0;margin-left:0;border-left:none;}
+		.total_page_num{font-size:18px;color:#5bcdda;}
+	</style>
+</head>
+<body>
+<div id="wrap">
+	<div id="header">
+		<h1>Boxads 마크업리스트</h1>
+		<div>
+			<p>Version: <b>0.0.01</b></p>
+			<p>Last Update: <b>2019.05.30</b></p>
+			<p>Coding: <b>HTML5&amp;CSS3</b></p>
+			<!-- <p>Guide: <b><a href="guide/guide.html" target="_blank">guide.html</a></b></p> -->
+		</div>
+	</div>
+	<h4>코딩 목록</h4>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0" class="htmllist">
+		<thead>
+			<tr class="head">
+				<td>No</td>
+				<td>Path</td>
+				<td>FileName</td>
+				<td>State</td>
+				<td>View</td>
+				<td>Update</td>
+				<td>Design(PC)</td>
+				<td>Design(Mobile)</td>
+				<td>Remark</td>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<th colspan="9">메인화면</th>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/main/</td>
+				<td>main.html</td>
+				<td class="end">end</td>
+				<td><a href="./main/main.html" target="_blank">View</a></td>
+				<td>2019-10-23</td>
+				<td><a href="./design/main.jpg" target="_blank">Design(PC)</a></td>
+				<td><a href="./design/m_main.jpg" target="_blank">Design(Mobile)</a></td>
+				<td>메인 및 공통</td>
+			</tr>
+		</tbody>
+		<tbody>
+			<tr>
+				<th colspan="9">회원</th>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/member/</td>
+				<td>login.html</td>
+				<td class="end">end</td>
+				<td><a href="./member/login.html" target="_blank">View</a></td>
+				<td>2019-10-24</td>
+				<td><a href="./design/login.jpg" target="_blank">Design(PC)</a></td>
+				<td>-</td>
+				<td>로그인</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/member/</td>
+				<td>join.html</td>
+				<td class="end">end</td>
+				<td><a href="./member/join.html" target="_blank">View</a></td>
+				<td>2019-10-24</td>
+				<td><a href="./design/signup.jpg" target="_blank">Design(PC)</a></td>
+				<td>-</td>
+				<td>회원가입</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/member/</td>
+				<td>confirm.html</td>
+				<td class="end">end</td>
+				<td><a href="./member/confirm.html" target="_blank">View</a></td>
+				<td>2019-10-24</td>
+				<td><a href="./design/signup_complete.jpg" target="_blank">Design(PC)</a></td>
+				<td>-</td>
+				<td>회원가입 완료</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/member/</td>
+				<td>search.html</td>
+				<td class="end">end</td>
+				<td><a href="./member/search.html" target="_blank">View</a></td>
+				<td>2019-10-24</td>
+				<td><a href="./design/findpassword.jpg" target="_blank">Design(PC)</a></td>
+				<td>-</td>
+				<td>비밀번호 찾기</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/member/</td>
+				<td>pw_info.html</td>
+				<td class="end">end</td>
+				<td><a href="./member/pw_info.html" target="_blank">View</a></td>
+				<td>2019-10-24</td>
+				<td><a href="./design/info.jpg" target="_blank">Design(PC)</a></td>
+				<td>-</td>
+				<td>비밀번호 찾기 결과</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/member/</td>
+				<td>pw_set.html</td>
+				<td class="end">end</td>
+				<td><a href="./member/pw_set.html" target="_blank">View</a></td>
+				<td>2019-10-30</td>
+				<td><a href="./design/repassword.jpg" target="_blank">Design(PC)</a></td>
+				<td>-</td>
+				<td>비밀번호 재설정</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/mail/</td>
+				<td>mail_certify.html</td>
+				<td class="end">end</td>
+				<td><a href="./mail/mail_certify.html" target="_blank">View</a></td>
+				<td>2019-10-28</td>
+				<td>-</td>
+				<td></td>
+				<td>메일인증안내(메일폼)</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/mail/</td>
+				<td>confirm.html</td>
+				<td class="end">end</td>
+				<td><a href="./mail/confirm.html" target="_blank">View</a></td>
+				<td>2019-10-28</td>
+				<td>-</td>
+				<td></td>
+				<td>메일가입완료(메일폼)</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/mail/</td>
+				<td>biz_confirm.html</td>
+				<td class="end">end</td>
+				<td><a href="./mail/biz_confirm.html" target="_blank">View</a></td>
+				<td>2019-10-28</td>
+				<td>-</td>
+				<td></td>
+				<td>사업자 인증 완료(메일폼)</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/mail/</td>
+				<td>withdraw.html</td>
+				<td class="end">end</td>
+				<td><a href="./mail/withdraw.html" target="_blank">View</a></td>
+				<td>2019-10-28</td>
+				<td>-</td>
+				<td></td>
+				<td>회원탈퇴(메일폼)</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/mail/</td>
+				<td>change.html</td>
+				<td class="end">end</td>
+				<td><a href="./mail/change.html" target="_blank">View</a></td>
+				<td>2019-10-28</td>
+				<td>-</td>
+				<td></td>
+				<td>휴면회원 전환 예정 안내(메일폼)</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/mail/</td>
+				<td>change_finish.html</td>
+				<td class="end">end</td>
+				<td><a href="./mail/change_finish.html" target="_blank">View</a></td>
+				<td>2019-10-28</td>
+				<td>-</td>
+				<td></td>
+				<td>휴면회원 전환 완료 안내(메일폼)</td>
+			</tr>
+			<!--<tr>
+				<th colspan="9">카테고리 리스트</th>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/shop/</td>
+				<td>list_category.html</td>
+				<td class="end">end</td>
+				<td><a href="./shop/list_category.html" target="_blank">View</a></td>
+				<td>2019-11-13</td>
+				<td></td>
+				<td>-</td>
+				<td>카테고리 리스트</td>
+			</tr>-->
+			<tr>
+				<th colspan="9">박스</th>
+			</tr>
+			
+			<tr>
+				<td></td>
+				<td>/mypage/</td>
+				<td>box_write.html</td>
+				<td class="end">end</td>
+				<td><a href="./mypage/box_write.html" target="_blank">View</a></td>
+				<td>2019-10-31</td>
+				<td><a href="./design/mybox_upload.jpg" target="_blank">Design(PC)</a></td>
+				<td>-</td>
+				<td>마이박스등록(수정)</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/mypage/</td>
+				<td>list_mybox.html</td>
+				<td class="end">end</td>
+				<td><a href="./mypage/list_mybox.html" target="_blank">View</a></td>
+				<td>2019-11-13</td>
+				<td><a href="./design/mybox_list.jpg" target="_blank">Design(PC)</a></td>
+				<td>-</td>
+				<td>마이박스관리</td>
+			</tr>
+			
+			
+			<tr>
+				<td></td>
+				<td>/shop/</td>
+				<td>list_box.html</td>
+				<td class="end">end</td>
+				<td><a href="./shop/list_box.html" target="_blank">View</a></td>
+				<td>2019-11-05</td>
+				<td><a href="./design/list.jpg" target="_blank">Design(PC)</a></td>
+				<td><a href="./design/m_list.jpg" target="_blank">Design(Mobile)</a></td>
+				<td>박스리스트</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/shop/</td>
+				<td>view_box.html</td>
+				<td class="end">end</td>
+				<td><a href="./shop/view_box.html" target="_blank">View</a></td>
+				<<td>2019-11-11</td>
+				<td><a href="./design/detail.jpg" target="_blank">Design(PC)</a></td>
+				<td><a href="./design/m_detail.jpg" target="_blank">Design(Mobile)</a></td>
+				<td>박스상세</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/order/</td>
+				<td>order_box.html</td>
+				<td class="end">end</td>
+				<td><a href="./order/order_box.html" target="_blank">View</a></td>
+				<td>2019-11-12</td>
+				<td><a href="./design/order.jpg" target="_blank">Design(PC)</a></td>
+				<td><a href="./design/m_order.jpg" target="_blank">Design(Mobile)</a></td>
+				<td>박스주문</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/order/</td>
+				<td>order_finish.html</td>
+				<td class="end">end</td>
+				<td><a href="./order/order_finish.html" target="_blank">View</a></td>
+				<td>2019-11-12</td>
+				<td><a href="./design/order_com.jpg" target="_blank">Design(PC)</a></td>
+				<td><a href="./design/m_order_com.jpg" target="_blank">Design(Mobile)</a></td>
+				<td>박스주문완료</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/mypage/</td>
+				<td>list_sales_mybox.html</td>
+				<td class="end">end</td>
+				<td><a href="./mypage/list_sales_mybox.html" target="_blank">View</a></td>
+				<td>2019-11-13</td>
+				<td><a href="./design/sell_list.jpg" target="_blank">Design(PC)</a></td>
+				<td>-</td>
+				<td>마이박스리스트(판매)</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/mypage/</td>
+				<td>box_view_sales.html</td>
+				<td class="end">end</td>
+				<td><a href="./mypage/box_view_sales.html" target="_blank">View</a></td>
+				<td>2019-11-14</td>
+				<td><a href="./design/sell_detail.jpg" target="_blank">Design(PC)</a></td>
+				<td>-</td>
+				<td>마이박스(판매) - 진행상황은 각 유형별로만 기록</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/mypage/</td>
+				<td>list_buy_mybox.html</td>
+				<td class="end">end</td>
+				<td><a href="./mypage/list_buy_mybox.html" target="_blank">View</a></td>
+				<td>2019-11-13</td>
+				<td><a href="./design/buy_list.jpg" target="_blank">Design(PC)</a></td>
+				<td>-</td>
+				<td>마이박스리스트(구매)</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/mypage/</td>
+				<td>box_view_buy.html</td>
+				<td class="end">end</td>
+				<td><a href="./mypage/box_view_buy.html" target="_blank">View</a></td>
+				<td>2019-11-13</td>
+				<td><a href="./design/buy_detail.jpg" target="_blank">Design(PC)</a></td>
+				<td><a href="./design/m_buy_detail.jpg" target="_blank">Design(Mobile)</a></td>
+				<td>마이박스(구매)- 진행상황은 각 유형별로만 기록</td>
+			</tr>
+			
+			<tr>
+				<th colspan="9">애드</th>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/mypage/</td>
+				<td>ads_write.html</td>
+				<td class="end">end</td>
+				<td><a href="./mypage/ads_write.html" target="_blank">View</a></td>
+				<td>2019-10-31</td>
+				<td><a href="./design/myads_upload.jpg" target="_blank">Design(PC)</a></td>
+				<td>-</td>
+				<td>마이애드등록(수정)</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/mypage/</td>
+				<td>list_myads.html</td>
+				<td class="end">end</td>
+				<td><a href="./mypage/list_myads.html" target="_blank">View</a></td>
+				<td>2019-11-13</td>
+				<td>-</td>
+				<td>-</td>
+				<td>마이애드관리</td>
+			</tr>
+			
+			
+			<tr>
+				<td></td>
+				<td>/shop/</td>
+				<td>list_ads.html</td>
+				<td class="end">end</td>
+				<td><a href="./shop/list_ads.html" target="_blank">View</a></td>
+				<td>2019-11-05</td>
+				<td>-</td>
+				<td>-</td>
+				<td>광고리스트</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/shop/</td>
+				<td>view_ads.html</td>
+				<td class="end">end</td>
+				<td><a href="./shop/view_ads.html" target="_blank">View</a></td>
+				<td>2019-11-12</td>
+				<td><a href="./design/ads_detail.jpg" target="_blank">Design(PC)</a></td>
+				<td>-</td>
+				<td>광고상세</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/mypage/</td>
+				<td>list_request.myads.html</td>
+				<td class="end">end</td>
+				<td><a href="./mypage/list_request.myads.html" target="_blank">View</a></td>
+				<td>2019-11-13</td>
+				<td>-</td>
+				<td>-</td>
+				<td>마이애드요청리스트</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/mypage/</td>
+				<td>list_apply_ads.html</td>
+				<td class="end">end</td>
+				<td><a href="./mypage/list_apply_ads.html" target="_blank">View</a></td>
+				<td>2019-11-13</td>
+				<td>-</td>
+				<td>-</td>
+				<td>애드신청리스트</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/mypage/</td>
+				<td>ads_view_request.html</td>
+				<td class="end">end</td>
+				<td><a href="./mypage/ads_view_request.html" target="_blank">View</a></td>
+				<td>2019-11-15</td>
+				<td><a href="./design/ads_yo.jpg" target="_blank">Design(PC)</a></td>
+				<td>-</td>
+				<td>애드요청상세- 진행상황은 각 유형별로만 기록</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/mypage/</td>
+				<td>ads_view_request_end.html</td>
+				<td class="end">end</td>
+				<td><a href="./mypage/ads_view_request_end.html" target="_blank">View</a></td>
+				<td>2019-11-15</td>
+				<td><a href="./design/ads_yo.jpg" target="_blank">Design(PC)</a></td>
+				<td>-</td>
+				<td>애드요청상세 광고주가 주문완료한 상태</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/mypage/</td>
+				<td>ads_view_aply.html</td>
+				<td class="end">end</td>
+				<td><a href="./mypage/ads_view_aply.html" target="_blank">View</a></td>
+				<td>2019-11-15</td>
+				<td></td>
+				<td>-</td>
+				<td>애드신청상세 - 진행상황은 각 유형별로만 기록</td>
+			</tr>
+
+			<tr>
+				<td></td>
+				<td>/mypage/</td>
+				<td>box_write.html</td>
+				<td class="end">end</td>
+				<td><a href="./mypage/box_write.html" target="_blank">View</a></td>
+				<td>2019-11-15</td>
+				<td><a href="./design/ads_popup.jpg" target="_blank">Design(PC)</a></td>
+				<td>-</td>
+				<td>광고유형 가이드 팝업 - 박스 작성이나 애드 작성에서 확인 가능</td>
+			</tr>
+			<tr>
+				<th colspan="9">검색결과</th>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/shop/</td>
+				<td>list_search_result.html</td>
+				<td class="end">end</td>
+				<td><a href="./shop/list_search_result.html" target="_blank">View</a></td>
+				<td>2019-11-13</td>
+				<td></td>
+				<td>-</td>
+				<td>검색결과(공통)</td>
+			</tr>
+			<tr>
+				<th colspan="9">고객센터</th>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/board/</td>
+				<td>notice_list.html</td>
+				<td class="end">end</td>
+				<td><a href="./board/notice_list.html" target="_blank">View</a></td>
+				<td>2019-11-06</td>
+				<td>-</td>
+				<td>-</td>
+				<td>공지사항 리스트</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/board/</td>
+				<td>notice_view.html</td>
+				<td class="end">end</td>
+				<td><a href="./board/notice_view.html" target="_blank">View</a></td>
+				<td>2019-11-06</td>
+				<td>-</td>
+				<td>-</td>
+				<td>공지사항 상세</td>
+			</tr>
+
+			<tr>
+				<td></td>
+				<td>/mypage/</td>
+				<td>question_write.html</td>
+				<td class="end">end</td>
+				<td><a href="./mypage/question_write.html" target="_blank">View</a></td>
+				<td>2019-11-06</td>
+				<td>-</td>
+				<td>-</td>
+				<td>1:1 문의 작성 </td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/mypage/</td>
+				<td>question_list.html</td>
+				<td class="end">end</td>
+				<td><a href="./mypage/question_list.html" target="_blank">View</a></td>
+				<td>2019-11-06</td>
+				<td>-</td>
+				<td>-</td>
+				<td>1:1 문의 리스트 </td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/mypage/</td>
+				<td>question_view.html</td>
+				<td class="end">end</td>
+				<td><a href="./mypage/question_view.html" target="_blank">View</a></td>
+				<td>2019-11-06</td>
+				<td>-</td>
+				<td>-</td>
+				<td>1:1 문의 상세 </td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/board/</td>
+				<td>faq.html</td>
+				<td class="end">end</td>
+				<td><a href="./board/faq.html" target="_blank">View</a></td>
+				<td>2019-11-06</td>
+				<td>-</td>
+				<td>-</td>
+				<td>FAQ</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/mypage/</td>
+				<td>terms.html</td>
+				<td class="end">end</td>
+				<td><a href="./mypage/terms.html" target="_blank">View</a></td>
+				<td>2019-11-06</td>
+				<td>-</td>
+				<td>-</td>
+				<td>이용약관</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/mypage/</td>
+				<td>policy.html</td>
+				<td class="end">end</td>
+				<td><a href="./mypage/policy.html" target="_blank">View</a></td>
+				<td>2019-11-06</td>
+				<td>-</td>
+				<td>-</td>
+				<td>개인정보 취급방침</td>
+			</tr>
+			<tr>
+				<th colspan="9">이용안내</th>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/guide/</td>
+				<td>guide_box.html</td>
+				<td class="end">end</td>
+				<td><a href="./guide/guide_box.html" target="_blank">View</a></td>
+				<td>2019-11-20</td>
+				<td><a href="./design/box_howtouse.jpg" target="_blank">Design(PC)</a></td>
+				<td>-</td>
+				<td>판매점 박스 이용법</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/guide/</td>
+				<td>guide_ads.html</td>
+				<td class="end">end</td>
+				<td><a href="./guide/guide_ads.html" target="_blank">View</a></td>
+				<td>2019-11-20</td>
+				<td><a href="./design/ads_howtouse.jpg" target="_blank">Design(PC)</a></td>
+				<td>-</td>
+				<td>광고주 애드 이용법</td>
+			</tr>
+			<tr>
+				<th colspan="9">메시지</th>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/msg/</td>
+				<td>list.html</td>
+				<td class="end">end</td>
+				<td><a href="./msg/list.html" target="_blank">View</a></td>
+				<td>2019-11-19</td>
+				<td><a href="./design/message.jpg" target="_blank">Design(PC)</a></td>
+				<td>-</td>
+				<td>메세지 리스트</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/msg/</td>
+				<td>view.html</td>
+				<td class="end">end</td>
+				<td><a href="./msg/view.html" target="_blank">View</a></td>
+				<td>2019-11-19</td>
+				<td><a href="./design/message.jpg" target="_blank">Design(PC)</a></td>
+				<td>-</td>
+				<td>채팅 문의</td>
+			</tr>
+			<tr>
+				<th colspan="9">지갑관리</th>
+			</tr>
+			
+			<tr>
+				<td></td>
+				<td>/wallet/</td>
+				<td>list_cash.html</td>
+				<td class="end">end</td>
+				<td><a href="./wallet/list_cash.html" target="_blank">View</a></td>
+				<td>2019-11-18</td>
+				<td><a href="./design/cash_list.jpg" target="_blank">Design(PC)</a></td>
+				<td>-</td>
+				<td>캐시내역</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/wallet/</td>
+				<td>withdraw.html</td>
+				<td class="end">end</td>
+				<td><a href="./wallet/withdraw.html" target="_blank">View</a></td>
+				<td>2019-11-19</td>
+				<td><a href="./design/cash_ch.jpg" target="_blank">Design(PC)</a></td>
+				<td>-</td>
+				<td>캐시출금</td>
+			</tr>
+
+			<tr>
+				<td></td>
+				<td>/wallet/</td>
+				<td>charge.html</td>
+				<td class="end">end</td>
+				<td><a href="./wallet/charge.html" target="_blank">View</a></td>
+				<td>2019-11-19</td>
+				<td><a href="./design/cash_buy.jpg" target="_blank">Design(PC)</a></td>
+				<td>-</td>
+				<td>캐시충전하기</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/wallet/</td>
+				<td>charge_finish.html</td>
+				<td class="end">end</td>
+				<td><a href="./wallet/charge_finish.html" target="_blank">View</a></td>
+				<td>2019-11-19</td>
+				<td><a href="./design/cash_com.jpg" target="_blank">Design(PC)</a></td>
+				<td>-</td>
+				<td>캐시충전완료</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/wallet/</td>
+				<td>list_coupon.html</td>
+				<td class="end">end</td>
+				<td><a href="./wallet/list_coupon.html" target="_blank">View</a></td>
+				<td>2019-11-19</td>
+				<td><a href="./design/cash_coopon.jpg" target="_blank">Design(PC)</a></td>
+				<td>-</td>
+				<td>쿠폰북</td>
+			</tr>
+			<tr>
+				<th colspan="9">찜리스트</th>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/mypage/</td>
+				<td>list_wish.html</td>
+				<td class="end">end</td>
+				<td><a href="./mypage/list_wish.html" target="_blank">View</a></td>
+				<td>2019-11-18</td>
+				<td><a href="./design/wish_list.jpg" target="_blank">Design(PC)</a></td>
+				<td>-</td>
+				<td>찜리스트</td>
+			</tr>
+			<tr>
+				<th colspan="9">거래관리</th>
+			</tr>
+
+			<tr>
+				<td></td>
+				<td>/deal/</td>
+				<td>list01.html</td>
+				<td class="end">end</td>
+				<td><a href="./deal/list01.html" target="_blank">View</a></td>
+				<td>2019-11-18</td>
+				<td>-</td>
+				<td>-</td>
+				<td>결제내역</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/deal/</td>
+				<td>list02.html</td>
+				<td class="end">end</td>
+				<td><a href="./deal/list02.html" target="_blank">View</a></td>
+				<td>2019-11-18</td>
+				<td><a href="./design/deal_list.jpg" target="_blank">Design(PC)</a></td>
+				<td>-</td>
+				<td>증빙서류 발행내역</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/deal/</td>
+				<td>write_deal.html</td>
+				<td class="end">end</td>
+				<td><a href="./deal/write_deal.html" target="_blank">View</a></td>
+				<td>2019-11-18</td>
+				<td><a href="./design/deal_info.jpg" target="_blank">Design(PC)</a></td>
+				<td>-</td>
+				<td>거래정보</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/deal/</td>
+				<td>write_withdraw.html</td>
+				<td class="end">end</td>
+				<td><a href="./deal/write_withdraw.html" target="_blank">View</a></td>
+				<td>2019-11-18</td>
+				<td>-</td>
+				<td>-</td>
+				<td>출금정보</td>
+			</tr>
+			<tr>
+				<th colspan="9">계정관리</th>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/mypage/</td>
+				<td>profile_edit.html</td>
+				<td class="end">end</td>
+				<td><a href="./mypage/profile_edit.html" target="_blank">View</a></td>
+				<td>2019-11-01</td>
+				<td><a href="./design/manage.jpg" target="_blank">Design(PC)</a></td>
+
+				<td></td>
+				<td>계정관리</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/mypage/</td>
+				<td>member_quit.html</td>
+				<td class="end">end</td>
+				<td><a href="./mypage/member_quit.html" target="_blank">View</a></td>
+				<td>2019-11-01</td>
+				<td><a href="./design/memberout.jpg" target="_blank">Design(PC)</a></td>
+				<td></td>
+				<td>탈퇴</td>
+			</tr>
+               <th colspan="9">기업소개</th>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/mypage/</td>
+				<td>-</td>
+				<td class="end">end</td>
+				<td><a href="./about/company_about.html" target="_blank">View</a></td>
+				<td>2019-11-22</td>
+				<td><a href="./design/about.jpg" target="_blank">Design(PC)</a></td>
+
+				<td></td>
+				<td>About</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>/mypage/</td>
+				<td>-</td>
+				<td class="end">end</td>
+				<td><a href="./about/service_intro.html" target="_blank">View</a></td>
+				<td>2019-11-22</td>
+				<td><a href="./design/service.jpg" target="_blank">Design(PC)</a></td>
+				<td></td>
+				<td>서비스 소개</td>
+			</tr>
+
+			
+		</tbody>
+	</table>
+</div>
+<script>
+	var totalPageNum = 0;
+	$('tbody').each(function(idx){
+		var titTxt = $('tbody').eq(idx).find('th').text();
+		$('.total').append('<span class="tit_txt">' + titTxt + ': </span>')
+		$(this).find('tr').each(function(i){
+			$(this).find('td:first-child').text(i);
+			num = $(this).filter(':last-child').find('td:first-child').text();
+		});
+		$('.total').append('<strong>' + num + '</strong>');
+		totalPageNum += parseInt(num);
+	});
+	$('.total h3').append('<strong class="total_page_num">' + totalPageNum + '</strong>');
+	console.log($('tbody tr').length)
+</script>
+</body>
+</html>
